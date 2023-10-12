@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEUROjoynet</title>
+    <title>neuroJOYnet</title>
     <script src="./libs/gsap/gsap.min.js" defer></script>
     <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
@@ -11,20 +11,150 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="hero-section">
-        <div class="hero-container">
-            <img class="hero-bg" src="./img/banner1.jpg" alt="">
-            <img class="hero" src="./img/figure.png" alt="Yuri">
-            <div class="container">
-                <div class="main-header">
-                    <h1 class="header-title">Освойте профессию </h1>
+    
+    <div class="hero-container">
+        <header class="header-container">
+                <div class="goodly-logo">
+                    <h2><a href="">GODDLY<span>.PRO</span></a></h2>
+                </div>
+                <nav>
+                    <ul class="header-nav">
+                        <li class="header-nav__li1"><a class="header-nav__a" href="">Программа</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="">Тарифы</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="">Галерея</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="">От&nbsp;автора</a></li>
+                        <li class="header-nav__li2"><a class="header-nav__a" href="">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="socials">
+                    <ul class="header-socials">
+                        <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/VK.png" alt="Vk social" ></a></li>
+                        <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/Telegram.png" alt="Telegram social" ></a></li>
+                    </ul>
+                </div>
+        </header>
+        <div>
+            <img class="fog" src="./img/fog 2.png" alt="">
+            <img class="figure" src="./img/фигура.png" alt="">
+            <!-- <div class="stiker">
+                <div class="stiker-container">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356 355" class='image'>
+                        <defs>
+                            <pattern id="pattern" patternUnits="objectBoundingBox" width="1" height="1">
+                                <image
+                                    xlink:href="https://images.unsplash.com/photo-1695893207728-d29d84993693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80"
+                                    x="0" y="0" width="100%" height="100%"> </image>
+                            </pattern>
+                        </defs>
+                        <path
+                            d="M190.01 90.3146L190.13 91.1305L190.483 90.3856L228.844 9.58009L215.29 98.085L215.165 98.8985L215.721 98.2917L276.054 32.4494L237.17 113.006L236.813 113.745L237.521 113.33L314.467 68.3019L253.706 133.752L253.15 134.351L253.946 134.165L340.67 113.953L263.429 158.479L262.723 158.886L263.536 158.945L352.331 165.346L265.475 184.99L264.68 185.17L265.439 185.467L348.415 217.914L259.664 210.932L258.85 210.868L259.488 211.377L329.268 266.985L246.51 233.997L245.749 233.693L246.211 234.37L296.596 308.197L227.181 252.135L226.542 251.619L226.785 252.404L253.3 337.89L203.397 263.737L202.937 263.054L202.94 263.878L203.23 353.425L177.27 267.771L177.031 266.982L176.791 267.771L150.831 353.425L151.122 263.878L151.124 263.054L150.664 263.737L100.761 337.89L127.276 252.404L127.519 251.619L126.88 252.135L57.4653 308.197L107.851 234.37L108.312 233.693L107.552 233.997L24.7924 266.985L94.5729 211.377L95.2113 210.868L94.3975 210.932L5.64622 217.914L88.6214 185.467L89.3805 185.17L88.5855 184.99L1.73002 165.346L90.5254 158.945L91.3388 158.886L90.6323 158.479L13.3914 113.953L100.116 134.165L100.912 134.351L100.356 133.752L39.5939 68.3019L116.54 113.33L117.248 113.745L116.891 113.006L78.0072 32.4494L138.34 98.2917L138.896 98.8985L138.771 98.085L125.218 9.58009L163.578 90.3856L163.932 91.1305L164.051 90.3146L177.031 1.72458L190.01 90.3146Z"
+                            stroke="white" stroke-width="0.5" fill='url(#pattern)'>
+                        </path>
+                    </svg>
+                    <h3 class="stiker-title">-64%</h3>
+                </div>
+            </div>  -->
+        </div>
+        <main class="main-container">
+            <div class="main-container__left">
+                <div class="hero-titel">
+                    <h1 class="titel">Нейроиллюстратор-профессия будущего</h1>
+                    <img class="hero-titel__img" src="./img/Заголовок первого экрана.svg" alt="Нейроиллюстратор-профессия будущего">
+                </div>
+                <div class="hero-text">
+                    <p>Нейросети в&nbsp;самом ближайшем будущем станут частью нашей повседневной жизни, но&nbsp;рынок услуг
+                        с&nbsp;применением
+                        нейросетей формируется прямо сейчас! Курс Кнопка &laquo;ШЕДЕВР&raquo; поможет оставаться на&nbsp;пике
+                        технологий.</p>
+                </div>
+                <div class=" hero-action">
+                    <a href="https://neurojoynet.goodly.pro/store/20suffcr" target="_blank" class="action-link">Начать обучение</a>
+                </div>
+                <div class="hero-vebinar">
+                    <a href="https://neurojoynet.goodly.pro/gw/room/neuro90923" target="_blank" class="vebinar-link">Секреты
+                        онлайн-профессии будущего</a>
+                    <div class="vebinar-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="47" viewBox="0 0 50 47" fill="none">
+                            <g filter="url(#filter0_bi_204_2775)">
+                                <ellipse cx="25" cy="23.4589" rx="25" ry="23.4589" fill="#0E1419" fill-opacity="0.4" />
+                                <path
+                                    d="M49.5 23.4589C49.5 36.1093 38.5614 46.4178 25 46.4178C11.4386 46.4178 0.5 36.1093 0.5 23.4589C0.5 10.8085 11.4386 0.5 25 0.5C38.5614 0.5 49.5 10.8085 49.5 23.4589Z"
+                                    stroke="url(#paint0_linear_204_2775)" />
+                            </g>
+                            <g filter="url(#filter1_bd_204_2775)">
+                                <path d="M40 23.4589L17.5 35.6485L17.5 11.2693L40 23.4589Z" fill="#7D7D7D" fill-opacity="0.4"
+                                    shape-rendering="crispEdges" />
+                                <path d="M18 12.1089L38.9503 23.4589L18 34.809L18 12.1089Z" stroke="url(#paint1_linear_204_2775)"
+                                    shape-rendering="crispEdges" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_bi_204_2775" x="-40" y="-40" width="130" height="126.918"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_204_2775" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_204_2775" result="shape" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                        result="hardAlpha" />
+                                    <feOffset dx="-2" dy="-2" />
+                                    <feGaussianBlur stdDeviation="4.5" />
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0" />
+                                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_204_2775" />
+                                </filter>
+                                <filter id="filter1_bd_204_2775" x="-22.5" y="-28.7307" width="102.5" height="104.379"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_204_2775" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                        result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="2" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                    <feBlend mode="normal" in2="effect1_backgroundBlur_204_2775" result="effect2_dropShadow_204_2775" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_204_2775" result="shape" />
+                                </filter>
+                                <linearGradient id="paint0_linear_204_2775" x1="4.5" y1="33.7808" x2="49.0617" y2="13.4284"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00FFFF" />
+                                    <stop offset="0.510417" stop-color="#E9F8DD" />
+                                    <stop offset="1" stop-color="#A128FF" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_204_2775" x1="18.4" y1="11.9172" x2="28.8966" y2="38.0182"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00FFFF" />
+                                    <stop offset="0.510417" stop-color="#E9F8DD" />
+                                    <stop offset="1" stop-color="#A128FF" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero-drop">
+                    <ul class="drop-list">
+                        <li class="drop">+1000 Студентов прошли курс</li>
+                        <li class="drop">Zero-Code дисциплина</li>
+                        <li class="drop">Старт обучения каждый день</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-container__right">
+                <div class="btn-hologram">
+                    <a class="tariffMax" href="https://neurojoynet.goodly.pro/store/20suffcr" target="_blank">
+                        Тариф<br>pro&nbsp;max
+                        <div> </div>
+                    </a>
                 </div>
                 
+                <a class="tarifStandart" href="https://neurojoynet.goodly.pro/store/23kiy9hb" target="_blank">
+                    <h3>Тариф<br>STANDART</h3>
+                </a>
             </div>
-        </div>
+        </main>        
         
-    </header>
-
+    </div>       
 
 
 </body>
