@@ -77,9 +77,10 @@
     justify-content: center;
     align-items    : center;
     width          : 100%;
-    border-radius  : 25px;
-    background     : linear-gradient(#fff2, transparent);
-    backdrop-filter: blur(10px);
+    border-radius  : calc(var(--index)*1.15);
+    background     : linear-gradient(#fff2, transparent), rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+    box-shadow     : -2px -2px 9px 0px rgba(255, 255, 255, 0.30) inset;
     color          : #FFF;
     font-family    : drukWidecyr-bold;
     font-size      : calc(var(--index)*1);
@@ -108,7 +109,7 @@
     left         : 0;
     right        : 0;
     bottom       : 0;
-    border-radius: 25px;
+    border-radius: calc(var(--index)*1.15);
     border       : 3px solid transparent;
     background   : linear-gradient(45deg, #00FFFF, #E9F8DD, #A128FF, #00FFFF,
             #E9F8DD,
@@ -142,7 +143,11 @@
 }
 
 .hero-vebinar>.vebinar-svg {
-    transition: all 0.5s ease-out;
+    transition     : all 0.5s ease-out;
+    background     : rgba(14, 20, 25, 1);
+    box-shadow     : -2px -2px 9px 0px rgba(255, 255, 255, 0.30) inset;
+    backdrop-filter: blur(50px);
+    border-radius  : 70px;
 }
 
 .hero-vebinar>.vebinar-link {
@@ -160,13 +165,12 @@
 .vebinar-link {
     position       : relative;
     padding        : 20px;
-    border-radius  : 5px;
     display        : flex;
     align-items    : center;
     width          : 100%;
-    border-radius  : 25px;
-    background     : linear-gradient(#fff2, transparent);
-    backdrop-filter: blur(10px);
+    border-radius  : calc(var(--index)*1.15);
+    background     : linear-gradient(#fff2, transparent), rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
     color          : #FFF;
     font-family    : EuropeExtendedC;
     font-size      : calc(var(--index)*0.8);
@@ -207,7 +211,7 @@
     left         : 0;
     right        : 0;
     bottom       : 0;
-    border-radius: 25px;
+    border-radius: calc(var(--index)*1.15);
     border       : 1px solid transparent;
     background   : linear-gradient(45deg, #00FFFF, #E9F8DD, #A128FF, #00FFFF,
             #E9F8DD,
@@ -240,14 +244,20 @@
 }
 
 .vebinar-svg {
-    position: absolute;
-    left    : 81%;
-    width   : calc(var(--index)*4);
+    position  : absolute;
+    left      : 81%;
+    width     : calc(var(--index)*4);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 4px 4px 9px 0px rgba(255, 255, 255, 0.30) inset,
+        -9px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .vebinar-svg>path {
-    fill           : linear-gradient(#fff2, transparent);
-    backdrop-filter: blur(10px);
+    fill           : linear-gradient(#fff2, transparent), rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(50px);
+
+
+
 }
 
 .drop-list {
@@ -261,13 +271,13 @@
 
 .drop {
     position       : relative;
-    border-radius  : 25px;
+    border-radius  : calc(var(--index)*1.15);
     display        : flex;
     align-items    : center;
     justify-content: center;
     width          : calc(var(--index)*19.5);
-    background     : linear-gradient(#fff2, transparent);
-    backdrop-filter: blur(10px);
+    background     : linear-gradient(#fff2, transparent), rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
     color          : #FFF;
     font-family    : EuropeExtendedC;
     font-size      : calc(var(--index)*0.7);
@@ -277,6 +287,7 @@
     letter-spacing : 1.2px;
     text-decoration: none;
     padding        : 1.8%;
+
 
     @media(min-width: 580px) {
         padding: 8px 4px;
@@ -302,7 +313,7 @@
     left         : 0;
     right        : 0;
     bottom       : 0;
-    border-radius: 25px;
+    border-radius: calc(var(--index)*1.15);
     border       : 1px solid transparent;
     background   : linear-gradient(45deg, #00FFFF, #E9F8DD, #A128FF, #00FFFF,
             #E9F8DD,
@@ -318,7 +329,7 @@
 .drop-text {
     text-align    : center;
     width         : 100%;
-    border-radius : 25px;
+    border-radius : calc(var(--index)*1);
     color         : #FFF;
     font-family   : EuropeExtendedC;
     font-size     : calc(var(--index) * 0.7);
@@ -337,7 +348,7 @@
     align-items          : center;
     width                : calc(var(--index)*4.35);
     height               : calc(var(--index)*13);
-    border-radius        : 20px 0px 0px 20px;
+    border-radius        : calc(var(--index)*1) 0px 0px calc(var(--index)*1);
     border               : 0.5px solid #FFF;
     background-size      : cover;
     background-position  : center;
@@ -355,7 +366,7 @@
     background-repeat  : no-repeat;
     width              : 100%;
     height             : 100%;
-    border-radius      : 20px 0px 0px 20px;
+    border-radius      : calc(var(--index)*1) 0px 0px calc(var(--index)*1);
 
 }
 
@@ -378,10 +389,10 @@
     align-items    : center;
     width          : calc(var(--index)*4.35);
     height         : calc(var(--index)*13);
-    border-radius  : 20px 0px 0px 20px;
+    border-radius  : calc(var(--index)*1) 0px 0px calc(var(--index)*1);
     border         : 0.5px solid #FFF;
-    background     : linear-gradient(#fff2, transparent);
-    backdrop-filter: blur(30px);
+    background     : linear-gradient(#fff2, transparent), rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
     text-decoration: none;
 }
 

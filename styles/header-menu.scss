@@ -106,13 +106,13 @@
     font-style     : normal;
     font-weight    : 400;
     line-height    : normal;
+    transition     : all 0.1s;
 }
 
 .header-nav__a:hover {
     text-decoration: underline;
     transform      : scale(1.08);
     box-shadow     : -2px 2px 4px 0px #000;
-    ;
 }
 
 .header-socials {

@@ -58,6 +58,9 @@
 }
 
 .abilities-item {
+    background: linear-gradient(#fff2, transparent),
+        rgba(54, 54, 54, 0.40);
+    backdrop-filter: blur(40px);
     width          : 100%;
     height         : calc(var(--index)*13.5);
     border         : 1px solid #FBFBFB;
@@ -101,6 +104,7 @@
 }
 
 .abilities-control__container {
+
     display        : flex;
     flex-direction : row;
     justify-content: space-between;

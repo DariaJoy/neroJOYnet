@@ -65,6 +65,9 @@
 }
 
 .utility-list__item {
+    background: linear-gradient(#fff2, transparent),
+        rgba(54, 54, 54, 0.40);
+    backdrop-filter: blur(40px);
     width          : calc(var(--index)*15);
     height         : calc(var(--index)*13.5);
     border         : 1px solid #FBFBFB;
@@ -99,6 +102,9 @@
 }
 
 .utility-list__bottom {
+    background: linear-gradient(#fff2, transparent),
+        rgba(54, 54, 54, 0.40);
+    backdrop-filter: blur(40px);
     display        : flex;
     justify-content: center;
     align-items    : center;
