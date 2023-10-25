@@ -1,0 +1,144 @@
+.program-contaner {
+    margin               : 0 auto;
+    margin-top           : calc(var(--index)*0.5);
+    background-image     : url(/public/img/program-screen.png);
+    mix-blend-mode       : lighten;
+    background-repeat    : no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
+    background-size      : 100% 100%;
+    height               : auto;
+
+}
+
+.program-contaner__main {
+    width          : 100%;
+    height         : auto;
+    padding        : calc(var(--index) * 3) 115px calc(var(--index) * 3) 115px;
+    gap            : calc(var(--index)*1.8);
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+
+    @media (min-width: 580px) {
+        gap    : calc(var(--index)*1);
+        padding: calc(var(--index) * 1.5) 25px calc(var(--index) * 1.5) 25px;
+    }
+
+    @media (min-width: 820px) {
+        gap    : calc(var(--index)*1.2);
+        padding: calc(var(--index) * 1.8) 33px calc(var(--index) * 1.8) 33px;
+    }
+
+    @media (min-width: 1120px) {
+        gap    : calc(var(--index)*1.4);
+        padding: calc(var(--index) * 2) 65px calc(var(--index) * 2) 65px;
+    }
+
+    @media (min-width: 1440px) {
+        gap    : calc(var(--index)*1.8);
+        padding: calc(var(--index) * 3) 115px calc(var(--index) * 3) 115px;
+    }
+}
+
+.program-title {
+    display: flex;
+    width  : 40%;
+}
+
+.program-title__img {
+    width: 100%;
+}
+
+.program-control {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    gap            : calc(var(--index)*1.8);
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.program-item {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    padding        : 2%;
+    width          : calc(var(--index)*17);
+    height         : calc(var(--index)*17);
+    border         : 1px solid #FBFBFB;
+    border-radius  : calc(var(--index)*1);
+    gap            : calc(var(--index)*1.8);
+}
+
+.program-item__title {
+    display       : flex;
+    align-items   : center;
+    width         : 100%;
+    height        : calc(var(--index)*5);
+    font-family   : drukWidecyr-bold;
+    font-size     : calc(var(--index)*1);
+    text-transform: uppercase;
+}
+
+.program-item__text {
+    display       : flex;
+    align-items   : center;
+    width         : 100%;
+    height        : calc(var(--index)*5);
+    font-family   : europeextendedc_bold;
+    font-size     : calc(var(--index)*0.8);
+    text-transform: uppercase;
+}
+
+.moduleOne {
+    background         : linear-gradient(66deg, #19917B 12%, rgba(0, 0, 0, 0.20) 96.87%), url(/public/img/DreamShaper_v7_cute_crystal_teddy_bear_made_of_pink_opal_seati_1.jpg);
+    background-size    : cover;
+    background-position: center;
+    box-shadow         : -2px 2px 4px 0px rgba(0, 0, 0, 0.70),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.moduleTwo {
+    background: linear-gradient(68deg, #622067 30.44%, rgba(0, 0, 0, 0.00) 106.47%),
+        url(/public/img/PhotoReal_beautiful_women_in_flowers_0.jpg);
+    background-size    : cover;
+    background-position: center;
+    box-shadow         : -2px 2px 4px 0px rgba(0, 0, 0, 0.70),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.moduleThree {
+    background         : linear-gradient(69deg, #784C0A 25.69%, rgba(129, 82, 13, 0.79) 40.96%, rgba(149, 99, 24, 0.48) 63.51%, rgba(144, 89, 6, 0.00) 97.88%), url(/public/img/1695204624812.jpeg);
+    background-size    : cover;
+    background-position: center;
+    box-shadow         : -2px 2px 4px 0px rgba(0, 0, 0, 0.70),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.moduleFour {
+    background         : linear-gradient(78deg, #026382 16.12%, rgba(2, 99, 129, 0.50) 51.72%, rgba(113, 31, 41, 0.20) 87.32%), url(/public/img/1695203742576.jpeg);
+    background-size    : cover;
+    background-position: center;
+    box-shadow         : -2px 2px 4px 0px rgba(0, 0, 0, 0.70),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.moduleFive {
+    background: linear-gradient(67deg, #A21C4C 28.14%, rgba(0, 0, 0, 0.00) 108.96%),
+        url(/public/img/instaport-style-ginger-cat.png);
+    background-size    : cover;
+    background-position: center;
+    box-shadow         : -2px 2px 4px 0px rgba(0, 0, 0, 0.70),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.moduleBonus {
+    background: linear-gradient(71deg, #474747 24.35%, rgba(56, 56, 56, 0.79) 51.55%, rgba(43, 43, 43, 0.61) 78.75%, rgba(13, 13, 13, 0.18) 105.94%, rgba(0, 0, 0, 0.00) 133.14%),
+        url(/public/img/realistic-vintage-photo-a-column-of-the-three-black-cars.png);
+    background-size    : cover;
+    background-position: center;
+    box-shadow         : -2px 2px 4px 0px rgba(0, 0, 0, 0.70),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

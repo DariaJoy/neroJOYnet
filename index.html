@@ -1,161 +1,622 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/fonts/europeextendedc_bold.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/europeextendedc_bolditalic.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/drukwidecyr-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <script type="module" src="/main.js"></script>
     <title>neuroJOYnet</title>
-    <script src="./libs/gsap/gsap.min.js" defer></script>
-    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
-    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="./js/app.js" defer></script>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    
-    <div class="hero-container">
-        <header class="header-container">
-                <div class="goodly-logo">
-                    <h2><a href="">GODDLY<span>.PRO</span></a></h2>
-                </div>
-                <nav>
-                    <ul class="header-nav">
-                        <li class="header-nav__li1"><a class="header-nav__a" href="">Программа</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a" href="">Тарифы</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a" href="">Галерея</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a" href="">От&nbsp;автора</a></li>
-                        <li class="header-nav__li2"><a class="header-nav__a" href="">FAQ</a></li>
-                    </ul>
-                </nav>
-                <div class="socials">
-                    <ul class="header-socials">
-                        <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/VK.png" alt="Vk social" ></a></li>
-                        <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/Telegram.png" alt="Telegram social" ></a></li>
-                    </ul>
-                </div>
-        </header>
-        <div>
-            <img class="fog" src="./img/fog 2.png" alt="">
-            <img class="figure" src="./img/фигура.png" alt="">
-            <!-- <div class="stiker">
-                <div class="stiker-container">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356 355" class='image'>
-                        <defs>
-                            <pattern id="pattern" patternUnits="objectBoundingBox" width="1" height="1">
-                                <image
-                                    xlink:href="https://images.unsplash.com/photo-1695893207728-d29d84993693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80"
-                                    x="0" y="0" width="100%" height="100%"> </image>
-                            </pattern>
-                        </defs>
-                        <path
-                            d="M190.01 90.3146L190.13 91.1305L190.483 90.3856L228.844 9.58009L215.29 98.085L215.165 98.8985L215.721 98.2917L276.054 32.4494L237.17 113.006L236.813 113.745L237.521 113.33L314.467 68.3019L253.706 133.752L253.15 134.351L253.946 134.165L340.67 113.953L263.429 158.479L262.723 158.886L263.536 158.945L352.331 165.346L265.475 184.99L264.68 185.17L265.439 185.467L348.415 217.914L259.664 210.932L258.85 210.868L259.488 211.377L329.268 266.985L246.51 233.997L245.749 233.693L246.211 234.37L296.596 308.197L227.181 252.135L226.542 251.619L226.785 252.404L253.3 337.89L203.397 263.737L202.937 263.054L202.94 263.878L203.23 353.425L177.27 267.771L177.031 266.982L176.791 267.771L150.831 353.425L151.122 263.878L151.124 263.054L150.664 263.737L100.761 337.89L127.276 252.404L127.519 251.619L126.88 252.135L57.4653 308.197L107.851 234.37L108.312 233.693L107.552 233.997L24.7924 266.985L94.5729 211.377L95.2113 210.868L94.3975 210.932L5.64622 217.914L88.6214 185.467L89.3805 185.17L88.5855 184.99L1.73002 165.346L90.5254 158.945L91.3388 158.886L90.6323 158.479L13.3914 113.953L100.116 134.165L100.912 134.351L100.356 133.752L39.5939 68.3019L116.54 113.33L117.248 113.745L116.891 113.006L78.0072 32.4494L138.34 98.2917L138.896 98.8985L138.771 98.085L125.218 9.58009L163.578 90.3856L163.932 91.1305L164.051 90.3146L177.031 1.72458L190.01 90.3146Z"
-                            stroke="white" stroke-width="0.5" fill='url(#pattern)'>
-                        </path>
-                    </svg>
-                    <h3 class="stiker-title">-64%</h3>
-                </div>
-            </div>  -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container hero-container">
+        <div class="header-container">
+          <div class="goodly-logo">
+            <a href="">
+              <h2>GODDLY<span>.PRO</span></h2>
+            </a>
+          </div>
+          <nav>
+            <ul class="header-nav">
+              <li class="header-nav__li1"><a class="header-nav__a" href="">Программа</a></li>
+              <li class="header-nav__li"><a class="header-nav__a" href="">Тарифы</a></li>
+              <li class="header-nav__li"><a class="header-nav__a" href="">Галерея</a></li>
+              <li class="header-nav__li"><a class="header-nav__a" href="">От&nbsp;автора</a></li>
+              <li class="header-nav__li2"><a class="header-nav__a" href="">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="socials">
+            <ul class="header-socials">
+              <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/VK.png" alt="Vk social"></a>
+              </li>
+              <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/Telegram.png"
+                    alt="Telegram social"></a></li>
+            </ul>
+          </div>
         </div>
-        <main class="main-container">
-            <div class="main-container__left">
-                <div class="hero-titel">
-                    <h1 class="titel">Нейроиллюстратор-профессия будущего</h1>
-                    <img class="hero-titel__img" src="./img/Заголовок первого экрана.svg" alt="Нейроиллюстратор-профессия будущего">
-                </div>
-                <div class="hero-text">
-                    <p>Нейросети в&nbsp;самом ближайшем будущем станут частью нашей повседневной жизни, но&nbsp;рынок услуг
-                        с&nbsp;применением
-                        нейросетей формируется прямо сейчас! Курс Кнопка &laquo;ШЕДЕВР&raquo; поможет оставаться на&nbsp;пике
-                        технологий.</p>
-                </div>
-                <div class=" hero-action">
-                    <a href="https://neurojoynet.goodly.pro/store/20suffcr" target="_blank" class="action-link">Начать обучение</a>
-                </div>
-                <div class="hero-vebinar">
-                    <a href="https://neurojoynet.goodly.pro/gw/room/neuro90923" target="_blank" class="vebinar-link">Секреты
-                        онлайн-профессии будущего</a>
-                    <div class="vebinar-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="47" viewBox="0 0 50 47" fill="none">
-                            <g filter="url(#filter0_bi_204_2775)">
-                                <ellipse cx="25" cy="23.4589" rx="25" ry="23.4589" fill="#0E1419" fill-opacity="0.4" />
-                                <path
-                                    d="M49.5 23.4589C49.5 36.1093 38.5614 46.4178 25 46.4178C11.4386 46.4178 0.5 36.1093 0.5 23.4589C0.5 10.8085 11.4386 0.5 25 0.5C38.5614 0.5 49.5 10.8085 49.5 23.4589Z"
-                                    stroke="url(#paint0_linear_204_2775)" />
-                            </g>
-                            <g filter="url(#filter1_bd_204_2775)">
-                                <path d="M40 23.4589L17.5 35.6485L17.5 11.2693L40 23.4589Z" fill="#7D7D7D" fill-opacity="0.4"
-                                    shape-rendering="crispEdges" />
-                                <path d="M18 12.1089L38.9503 23.4589L18 34.809L18 12.1089Z" stroke="url(#paint1_linear_204_2775)"
-                                    shape-rendering="crispEdges" />
-                            </g>
-                            <defs>
-                                <filter id="filter0_bi_204_2775" x="-40" y="-40" width="130" height="126.918"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
-                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_204_2775" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_204_2775" result="shape" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                        result="hardAlpha" />
-                                    <feOffset dx="-2" dy="-2" />
-                                    <feGaussianBlur stdDeviation="4.5" />
-                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0" />
-                                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_204_2775" />
-                                </filter>
-                                <filter id="filter1_bd_204_2775" x="-22.5" y="-28.7307" width="102.5" height="104.379"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
-                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_204_2775" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                        result="hardAlpha" />
-                                    <feOffset dy="4" />
-                                    <feGaussianBlur stdDeviation="2" />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                    <feBlend mode="normal" in2="effect1_backgroundBlur_204_2775" result="effect2_dropShadow_204_2775" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_204_2775" result="shape" />
-                                </filter>
-                                <linearGradient id="paint0_linear_204_2775" x1="4.5" y1="33.7808" x2="49.0617" y2="13.4284"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#00FFFF" />
-                                    <stop offset="0.510417" stop-color="#E9F8DD" />
-                                    <stop offset="1" stop-color="#A128FF" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_204_2775" x1="18.4" y1="11.9172" x2="28.8966" y2="38.0182"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#00FFFF" />
-                                    <stop offset="0.510417" stop-color="#E9F8DD" />
-                                    <stop offset="1" stop-color="#A128FF" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
-                <div class="hero-drop">
-                    <ul class="drop-list">
-                        <li class="drop">+1000 Студентов прошли курс</li>
-                        <li class="drop">Zero-Code дисциплина</li>
-                        <li class="drop">Старт обучения каждый день</li>
-                    </ul>
-                </div>
+        <div class="main-container">
+          <div class="main-container__left">
+            <div class="hero-title">
+              <h1 class="title visually-hidden">Нейроиллюстратор-профессия будущего</h1>
+              <img class="hero-title__img" src="./img/Заголовок первого экрана.svg" alt="Нейроиллюстратор-профессия будущего">
             </div>
-            <div class="main-container__right">
-                <div class="btn-hologram">
-                    <a class="tariffMax" href="https://neurojoynet.goodly.pro/store/20suffcr" target="_blank">
-                        Тариф<br>pro&nbsp;max
-                        <div> </div>
-                    </a>
-                </div>
-                
-                <a class="tarifStandart" href="https://neurojoynet.goodly.pro/store/23kiy9hb" target="_blank">
-                    <h3>Тариф<br>STANDART</h3>
+            <div class="hero-text">
+              <p>Нейросети в&nbsp;самом ближайшем будущем станут частью нашей повседневной жизни, но&nbsp;рынок услуг
+                с&nbsp;применением
+                нейросетей формируется прямо сейчас! Курс Кнопка &laquo;ШЕДЕВР&raquo; поможет оставаться на&nbsp;пике
+                технологий.</p>
+            </div>
+            <div class=" hero-action">
+              <a href="https://neurojoynet.goodly.pro/store/20suffcr" target="_blank" class="action-link">Начать обучение</a>
+            </div>
+            <div class="hero-bottom">
+              <div class="hero-vebinar">
+                <a href="https://neurojoynet.goodly.pro/gw/room/neuro90923" target="_blank" class="vebinar-link">Секреты
+                  онлайн-профессии будущего</a>
+                <a href="https://neurojoynet.goodly.pro/gw/room/neuro90923" target="_blank" class="vebinar-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="#223541" fill-opacity="1">
+                    <g filter="url(#filter0_bi_204_2775)">
+                      <ellipse cx="25" cy="23.4589" rx="25" ry="23.4589" fill="#0E1419" fill-opacity="0.4" />
+                      <path
+                        d="M49.5 23.4589C49.5 36.1093 38.5614 46.4178 25 46.4178C11.4386 46.4178 0.5 36.1093 0.5 23.4589C0.5 10.8085 11.4386 0.5 25 0.5C38.5614 0.5 49.5 10.8085 49.5 23.4589Z"
+                        stroke="url(#paint0_linear_204_2775)" />
+                    </g>
+                    <g filter="url(#filter1_bd_204_2775)">
+                      <path d="M40 23.4589L17.5 35.6485L17.5 11.2693L40 23.4589Z" fill="#7D7D7D" fill-opacity="0.4"
+                        shape-rendering="crispEdges" />
+                      <path d="M18 12.1089L38.9503 23.4589L18 34.809L18 12.1089Z" stroke="url(#paint1_linear_204_2775)"
+                        shape-rendering="crispEdges" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_bi_204_2775" x="-40" y="-40" width="130" height="126.918"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_204_2775" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_204_2775" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="-2" dy="-2" />
+                        <feGaussianBlur stdDeviation="4.5" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0" />
+                        <feBlend mode="normal" in2="shape" result="effect2_innerShadow_204_2775" />
+                      </filter>
+                      <filter id="filter1_bd_204_2775" x="-22.5" y="-28.7307" width="102.5" height="104.379"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20" />
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_204_2775" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                        <feBlend mode="normal" in2="effect1_backgroundBlur_204_2775" result="effect2_dropShadow_204_2775" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_204_2775" result="shape" />
+                      </filter>
+                      <linearGradient id="paint0_linear_204_2775" x1="4.5" y1="33.7808" x2="49.0617" y2="13.4284"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#00FFFF" />
+                        <stop offset="0.510417" stop-color="#E9F8DD" />
+                        <stop offset="1" stop-color="#A128FF" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_204_2775" x1="18.4" y1="11.9172" x2="28.8966" y2="38.0182"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#00FFFF" />
+                        <stop offset="0.510417" stop-color="#E9F8DD" />
+                        <stop offset="1" stop-color="#A128FF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </a>
+              </div>
+      
+              <ul class="drop-list">
+                <li class="drop">
+                  <p class="drop-text">+1000&nbsp;Студентов&nbsp;прошли&nbsp;курс</p>
+                </li>
+                <li class="drop">
+                  <p class="drop-text">Zero-Code&nbsp;дисциплина</p>
+                </li>
+                <li class="drop">
+                  <p class="drop-text">Старт&nbsp;обучения&nbsp;каждый&nbsp;день</p>
+                </li>
+              </ul>
             </div>
-        </main>        
-        
-    </div>       
+      
+          </div>
+          <div class="main-container__right">
+            <a class="tariffMax" href="https://neurojoynet.goodly.pro/store/20suffcr" target="_blank">
+              <img class="tariffMax-img"
+                src="https://images.unsplash.com/photo-1695895882963-eb1a92de0640?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80"
+                alt="">
+              <h3>Тариф<br>pro&nbsp;max</h3>
+            </a>
+            <a class="tarifStandart" href="https://neurojoynet.goodly.pro/store/23kiy9hb" target="_blank">
+              <h3>Тариф<br>STANDART</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <section class="container utility-container">
+        <div class="utility-container__main">
+          <div class="utility-title">
+            <h2 class="title visually-hidden">Для кого будет полезен курс Кнопка "Шедевр"</h2>
+            <img class="utility-title__img" src="/public/img/Заголовок второго экрана.svg"
+              alt="Для кого будет полезен курс Кнопка Шедевр">
+          </div>
+          <section class="utility-list">
+            <div class="utility-list__top">
+              <ul>
+                <li class="utility-list__item">
+                  <h3 class="utility-list__item_title">Ищите подработку / Новую профессию?</h3>
+                  <div class="utility-list__item_svg">
+                    <svg width="64" height="9" viewBox="0 0 64 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_146_2564)">
+                        <line x1="4" y1="0.5" x2="60" y2="0.5" stroke="white" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_146_2564" x="0" y="0" width="64" height="9" filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                          <feOffset dy="4" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_146_2564" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_146_2564" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
 
+                  </div>
+                  <p class="utility-list__item_text">Начните создавать красивые картинки уже с&nbsp;первого урока</p>
+                </li>
+                <li class="utility-list__item">
+                  <h3 class="utility-list__item_title">ЗАНИМАЕТЕСЬ
+                  ДИЗАЙНОМ?</h3>
+                  <div class="utility-list__item_svg">
+                    <svg width="64" height="9" viewBox="0 0 64 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_146_2564)">
+                        <line x1="4" y1="0.5" x2="60" y2="0.5" stroke="white" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_146_2564" x="0" y="0" width="64" height="9" filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                          <feOffset dy="4" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_146_2564" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_146_2564" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  
+                  </div>
+                  <p class="utility-list__item_text">Доверьте нейросети рутинную работу и&nbsp;создание референсов</p>
+                </li>
+                <li class="utility-list__item">
+                  <h3 class="utility-list__item_title">СОЗДАЕТЕ КОНТЕНТ?</h3>
+                  <div class="utility-list__item_svg">
+                    <svg width="64" height="9" viewBox="0 0 64 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_146_2564)">
+                        <line x1="4" y1="0.5" x2="60" y2="0.5" stroke="white" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_146_2564" x="0" y="0" width="64" height="9" filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                          <feOffset dy="4" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_146_2564" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_146_2564" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  
+                  </div>
+                  <p class="utility-list__item_text">Дополните проекты оригинальными иллюстрациями</p>
+                </li>
+                <li class="utility-list__item">
+                  <h3 class="utility-list__item_title">РАЗВИВАЕТЕ СОБСТВЕННЫЙ БРЕНД?</h3>
+                  <div class="utility-list__item_svg">
+                    <svg width="64" height="9" viewBox="0 0 64 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_146_2564)">
+                        <line x1="4" y1="0.5" x2="60" y2="0.5" stroke="white" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_146_2564" x="0" y="0" width="64" height="9" filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                          <feOffset dy="4" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_146_2564" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_146_2564" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+                  
+                  </div>
+                  <p class="utility-list__item_text">Снизьте издержки создавая контент самостоятельно</p>
+                </li>
+              </ul>
+            </div>
+            <div class="utility-list__bottom">
+              <h3 class="utility-list__item_title">Ищите новое увлекательное занятие?</h3>
+              <div class="utility-list__item_svg">
+                <svg width="64" height="9" viewBox="0 0 64 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_146_2564)">
+                    <line x1="4" y1="0.5" x2="60" y2="0.5" stroke="white" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_d_146_2564" x="0" y="0" width="64" height="9" filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_146_2564" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_146_2564" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              
+              </div>
+              <p class="utility-list__item_text">Создавайте невероятные изображения. Для этого не&nbsp;нужно быть художником или фотографом! Наш курс поможет быстро
+              добиться желаемого результата.</p>
+            </div>
+          </section>
+        </div>        
+      </section>
+      <section class="container abilities-container">
+        <div class="abilities-container__main">
+          <div class="abilities-title">
+            <h2 class="title visually-hidden">Возможности нейросетей</h2>
+            <img class="abilities-title__img" src="/public/img/Заголовок третьего экрана.svg" alt="Возможности нейросетей">
+          </div>
+          <section class="abilities-list">
+            <div class="abilities-item">
+              <h3 class="abilities-item__title">Генерация изображения на основе Текстового запроса</h3>
+              <div class="abilities-control">
+                <p class="abilities-control__text">Запрос/Promt: Диадема с&nbsp;драгоценными камнями и&nbsp;жемчугом на&nbsp;темно-синей бархатной подушечке/<br>A&nbsp;tiara with gem stones and pearls lies on&nbsp;top of&nbsp;a&nbsp;dark blue velvet cushion</p>
+                <div class="abilities-control__container">
+                  <img class="abilities-control__container-img" src="/public/img/tiara-with-gem-stones-cinematic-4k-epic.jpg" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/tiara-with-gem-stones-epic-royal-backgroun.jpg" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/tiara-with-gem-stones-sf-intricate-artwork.jpg" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/tiara-with-gem-stones-perfect-composition.jpg" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/tiara-with-gem-stones-centered-symmetry.jpg" alt="">
+                </div>
+              </div>
+              <p class="abilities-control__text-bottom"><span>&#10033;</span>Добавьте один из&nbsp;множества стилей: Spilberg/Royalistic/Masterpiece/Cinematic/etc</p>
+            </div>
+            <div class="abilities-item">
+              <h3 class="abilities-item__title">Смешивание изображения и&nbsp;нейросети</h3>
+              <div class="abilities-control">                
+                  <img class="abilities-control__container-img"
+                    src="/public/img/tiara-with-gem-stones-cinematic-4k-epic.jpg"
+                    alt="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
+                      <g filter="url(#filter0_i_1_1688)">
+                        <path d="M27.9197 35.6846V25.0849H0.423828V10.5998H27.9197V0L50.448 17.8423L27.9197 35.6846Z" fill="white"
+                          fill-opacity="0.2" style="mix-blend-mode:soft-light" />
+                      </g>
+                      <path
+                        d="M28.0697 10.5998V0.310146L50.2064 17.8423L28.0697 35.3745V25.0849V24.9349H27.9197H0.573828V10.7498H27.9197H28.0697V10.5998Z"
+                        stroke="white" stroke-width="0.3" />
+                      <defs>
+                        <filter id="filter0_i_1_1688" x="0.423828" y="-2" width="52.0241" height="37.6847" filterUnits="userSpaceOnUse"
+                          color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                          <feOffset dx="2" dy="-2" />
+                          <feGaussianBlur stdDeviation="4.5" />
+                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0" />
+                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_1688" />
+                        </filter>
+                      </defs>
+                  </svg>
+                  <img class="abilities-control__container-png" src="/public/img/tiara.png" alt="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
+                    <g filter="url(#filter0_i_1_1688)">
+                      <path d="M27.9197 35.6846V25.0849H0.423828V10.5998H27.9197V0L50.448 17.8423L27.9197 35.6846Z" fill="white"
+                        fill-opacity="0.2" style="mix-blend-mode:soft-light" />
+                    </g>
+                    <path
+                      d="M28.0697 10.5998V0.310146L50.2064 17.8423L28.0697 35.3745V25.0849V24.9349H27.9197H0.573828V10.7498H27.9197H28.0697V10.5998Z"
+                      stroke="white" stroke-width="0.3" />
+                    <defs>
+                      <filter id="filter0_i_1_1688" x="0.423828" y="-2" width="52.0241" height="37.6847" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="2" dy="-2" />
+                        <feGaussianBlur stdDeviation="4.5" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_1688" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div class="abilities-control__container">
+                  <img class="abilities-control__container-img" src="/public/img/00002-2896702305.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/00003-493645548.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/00013-3592868609.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/00011-2302146285.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/00018-2337237851.png" alt="">
+                </div>
+              </div>
+              <p class="abilities-control__text-bottom"><span>&#10033;</span>Создайте слой-маску для внедрения в&nbsp;новую генерацию</p>
+            </div>
+            <div class="abilities-item">
+              <h3 class="abilities-item__title">Обучение нейросети на&nbsp;основе собственных моделей</h3>
+              <div class="abilities-control">
+                
+                  <img class="abilities-control__container-portrait" src="/public/img/Maisie Williams.png" alt="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
+                    <g filter="url(#filter0_i_1_1688)">
+                      <path d="M27.9197 35.6846V25.0849H0.423828V10.5998H27.9197V0L50.448 17.8423L27.9197 35.6846Z" fill="white"
+                        fill-opacity="0.2" style="mix-blend-mode:soft-light" />
+                    </g>
+                    <path
+                      d="M28.0697 10.5998V0.310146L50.2064 17.8423L28.0697 35.3745V25.0849V24.9349H27.9197H0.573828V10.7498H27.9197H28.0697V10.5998Z"
+                      stroke="white" stroke-width="0.3" />
+                    <defs>
+                      <filter id="filter0_i_1_1688" x="0.423828" y="-2" width="52.0241" height="37.6847" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="2" dy="-2" />
+                        <feGaussianBlur stdDeviation="4.5" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_1688" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <div class="abilities-control__container">
+                  <img class="abilities-control__container-img" src="/public/img/Maisie-Williams00031-321382363.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/Maisie-Williams00033-792936522.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/Maisie-Williams00043-3698771192.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/Maisie-Williams00049-3685242427.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/Maisie-Williams00050-147610607.png" alt="">
+                  <img class="abilities-control__container-img" src="/public/img/Maisie-Williams00051-1292555802.png" alt="">
+                </div>
+              </div>           
+              
+              <p class="abilities-control__text-bottom"><span>&#10033;</span>Составьте фотосет и&nbsp;&laquo;скормите&raquo; его нейросети, что&nbsp;бы получить желаемый результат</p>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="container program-contaner">
+        <div class="program-contaner__main">
+          <div class="program-title">
+            <h2 class="title visually-hidden">Программа курса</h2>
+            <img class="program-title__img" src="/public/img/Заголовок четвертого экрана.svg" alt="Возможности нейросетей">
+          </div>
+          <div class="program-control">
+            <div class="program-item moduleOne">
+              <h3 class="program-item__title">Модуль 1.</h3>
+              <p class="program-item__text">Основы создания изображений при помощи нейросетей</p>
+            </div>
+            <div class="program-item moduleTwo">
+              <h3 class="program-item__title">Модуль 2.</h3>
+              <p class="program-item__text">создание модели stable defusion, <br>Знакомство с&nbsp;Automatic1111</p>
+            </div>
+            <div class="program-item moduleThree">
+              <h3 class="program-item__title">Модуль 3.</h3>
+              <p class="program-item__text">Основные функции Automatic1111</p>
+            </div>
+            <div class="program-item moduleFour">
+              <h3 class="program-item__title">Модуль 4.</h3>
+              <p class="program-item__text">Углубленное изучение и&nbsp;новые возможности Automatic1111</p>
+            </div>
+            <div class="program-item moduleFive">
+              <h3 class="program-item__title">Модуль 5.</h3>
+              <p class="program-item__text">Продвинутые методы в&nbsp;создании изображений</p>
+            </div>
+            <div class="program-item moduleBonus">
+              <h3 class="program-item__title">Бонус.</h3>
+              <p class="program-item__text">Записи живых эфиров</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container tariffs-container">
+        <div class="tariffs-container__main">
+          <div class="tariffs-title">
+            <h2 class="title visually-hidden">Тарифы</h2>
+            <img class="tariffs-title__img" src="/public/img/Заголовок пятого экрана.svg" alt="Возможности нейросетей">
+          </div>
+          <div class="tariffs-control">
+            <div class="tariffs-left">
+              <img
+                src="https://images.unsplash.com/photo-1695893207728-d29d84993693?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1780"
+                alt="">
+              <h3 class="tariffs-titel">Кнопка &laquo;Шедевр&raquo;&nbsp;&mdash; PRO MAX</h3>
+              <ul class="tariffs-list">
+                <li>&mdash;&nbsp;Обучение на&nbsp;платформе GOODLY<span>.PRO</span></li>
+                <li>&mdash;&nbsp;Срок обучения 6&nbsp;недель</li>
+                <li>&mdash;&nbsp;Прохождение уроков в&nbsp;свободном темпе</li>
+                <li>&mdash;&nbsp;Доступ к&nbsp;урокам стразу после оплаты</li>
+                <li>&mdash;&nbsp;Базовые модули (3&nbsp;модуля) + продвинутые</li>
+                <li>&mdash;&nbsp;Бонусные уроки</li>
+                <li>&mdash;&nbsp;Бессрочный доступ к&nbsp;материалам</li>
+                <li>&mdash;&nbsp;Списки запросов и&nbsp;стилей</li>
+                <li>&mdash;&nbsp;Доступ в&nbsp;закрытый чат</li>
+                <li>&mdash;&nbsp;Регулярные прямые трансляции</li>
+                <li>&mdash;&nbsp;Новые материалы и&nbsp;дополнения к&nbsp;курсу</li>
+                <li>&mdash;&nbsp;100% права перепродажи курса<br> Кнопка &laquo;Шедевр&raquo;&nbsp;&mdash; PRO MAX + Standart</li>
+                <li>&mdash;&nbsp;Доступ к&nbsp;сервисам GOODLY на&nbsp;1&nbsp;год<br> бесплатно по&nbsp;тарифу &laquo;для уверенных&raquo;</li>
+              </ul>              
+              <div class="tariffs-price__container">
+                <div class="tariff-price__before-container">
+                  <p class="tariff-price__before">40000</p>
+                  <img src="/public/img/price-line.svg" class="tariff-price__line">
+                  <p class="tariff-price__now">14500</p>
+                </div>                
+                <div class="tariffs-price__stiker">
+                  <div class="asid">
+                    <img src="/public/img/party-sale-asid.svg" alt="">
+                  </div>
+                  <p class="tariff-price__sale">-64%</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="tariffs-right">
+              <h3 class="tariffs-titel">Кнопка &laquo;Шедевр&raquo;&nbsp;&mdash; Standart</h3>
+              <ul class="tariffs-list">
+                <li>&mdash;&nbsp;Обучение на&nbsp;платформе GOODLY<span>.PRO</span></li>
+                <li>&mdash;&nbsp;Срок обучения 3&nbsp;недели</li>
+                <li>&mdash;&nbsp;Прохождение уроков в&nbsp;свободном темпе</li>
+                <li>&mdash;&nbsp;Доступ к&nbsp;урокам стразу после оплаты</li>
+                <li>&mdash;&nbsp;Базовые модули (3&nbsp;модуля)</li>
+                <li>&mdash;&nbsp;Бонусные уроки</li>
+                <li>&mdash;&nbsp;Бессрочные доступ к&nbsp;материалам</li>
+                <li>&mdash;&nbsp;Списки запросов и&nbsp;стилей</li>
+                <li>&mdash;&nbsp;Доступ в&nbsp;закрытый чат</li>
+                <li>&mdash;&nbsp;Регулярные прямые трансляции</li>
+                <li>&mdash;&nbsp;Новые материалы и&nbsp;дополнения к&nbsp;курсу</li>
+                <li>&mdash;&nbsp;100% права перепродажи курса Кнопка &laquo;Шедевр&raquo; Standart</li>
+                <li>&mdash;&nbsp;Доступ к&nbsp;сервисам GOODLY на&nbsp;3&nbsp;месяца<br> бесплатно по&nbsp;тарифу &laquo;для новичков&raquo;</li>
+              </ul>
+              <div class="tariffs-price__container">
+                <div class="tariff-price__before-container">
+                  <p class="tariff-price__before">19990</p>
+                  <img src="/public/img/price-line.svg" class="tariff-price__line">
+                  <p class="tariff-price__now">4900</p>
+                </div>
+                <div class="tariffs-price__stiker">
+                  <div class="asid">
+                    <img src="/public/img/party-sale-fuchsia.svg" alt="">
+                  </div>
+                  <p class="tariff-price__sale">-76%</p>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </section>
+      <section class="container gallery-container">
+        <div class="gallery-container__main">
+          <div class="gallery-title">
+              <h2 class="title visually-hidden">Галерея студентов и выпускников</h2>
+              <img class="tariffs-title__img" src="/public/img/title-gallery-screen.svg" alt="Галерея студентов и выпускников">
+          </div>
+          <div class="gallery-control">
+            <div class="gallery-students">
+              <div class="gallery-students__item gallery-students__item-sergey">
+                <p class="gallery-students__item-text">
+                  <span>Сергей.</span> &laquo;Работодатель сам нашёл меня в&nbsp;чате курса и&nbsp;предложил монетизировать мои навыки. Сейчас работаю
+                  удалённо в&nbsp;одной международной компании, деятельность которой связана с&nbsp;фотобанками на&nbsp;должности
+                  менеджера проекта и&nbsp;промпт-инженера. Так&nbsp;же продолжаю сотрудничество с&nbsp;владельцами некоторых Ютуб
+                  каналов, снабжаю их&nbsp;контентом.&raquo;
+                </p>
+                <div class="gallery-students__item-control">
+                  <div class="gallery-students__item-left">
+                    <img src="/public/img/photo_2023-08-18_17-08-45.jpg" alt=""><img src="/public/img/photo_2023-08-23_11-25-18.jpg" alt=""><img src="/public/img/photo_2023-09-13_15-21-58.jpg" alt=""><img src="/public/img/photo_2023-09-13_15-22-26.jpg" alt="">
+                  </div>
+                  <div class="gallery-students__item-right">
+                    <img src="/public/img/photo_2023-09-04_17-05-50.jpg" alt=""><img src="/public/img/photo_2023-08-20_09-24-07.jpg" alt=""><img src="/public/img/photo_2023-09-13_15-20-43.jpg" alt=""><img src="/public/img/photo_2023-08-31_10-28-39.jpg" alt="">
+                  </div>
+                </div>
+                <div class="gallery-students__item-link">
+                  <a href="https://t.me/c/1917925982/4" target="_blank">Подписаться <img src="/public/img/Telegram.png" alt=""></a>
+                </div>
+              </div>
+              <div class="gallery-students__item gallery-students__item-elena">
+                <p class="gallery-students__item-text">
+                  <span>Елена.</span> &laquo;Курс Кнопка &bdquo;Шедевр&ldquo; подтолкнул меня на&nbsp;создание генеративного творчества и&nbsp;поиска своего
+                  индивидуального стиля в&nbsp;нейроиллюстрации. Мои творческие изыскания помогли мне найти первых клиентов. Сделанные
+                  мной иллюстрации используют в&nbsp;качестве референсов художники и&nbsp;иллюстраторы книг, при этом я&nbsp;работаю
+                  в&nbsp;своё удовольствие.&raquo;
+                </p>
+                <div class="gallery-students__item-control">
+                  <div class="gallery-students__item-left">
+                    <img src="/public/img/photo_2023-09-13_17-57-19.jpg" alt=""><img src="/public/img/photo_2023-09-13_17-57-16.jpg"
+                      alt=""><img src="/public/img/photo_2023-09-13_17-57-08.jpg" alt="">
+                  </div>
+                  <div class="gallery-students__item-right">
+                    <img src="/public/img/photo_2023-09-13_17-57-11.jpg" alt=""><img src="/public/img/photo_2023-09-13_17-57-04.jpg"
+                      alt=""><img src="/public/img/photo_2023-09-13_17-56-56.jpg" alt="">
+                  </div>
+                </div>
+                <div class="gallery-students__item-link">
+                  <a href="https://t.me/c/1917925982/4" target="_blank">Подписаться <img src="/public/img/Telegram.png" alt=""></a>
+                </div>
+              </div>
+              <div class="gallery-students__item"></div>
+            </div>
+            <div class="gallery-bottom">
+              <div class="gallery-bottom-telegram">
+                <a href="https://t.me/c/1917925982/4" target="_blank">Ещё больше оабот <img src="/public/img/Telegram.png" alt=""></a>
+              </div>
+              <div class="gallery-bottom-vebinar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-</body>
+      <div class="shapes">
+        <img class="fog" src="./img/fog 2.png" alt="">
+        <img class="figure" src="./img/фигура.png" alt="">
+        <div class="stiker">
+          <div class='stick frame--leak'>
+            <div class='shader'>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 356 355" class='image'>
+                <defs>
+                  <pattern id="pattern" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image
+                      xlink:href="https://images.unsplash.com/photo-1695893207728-d29d84993693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80"
+                      x="0" y="0" width="100%" height="100%"> </image>
+                  </pattern>
+                </defs>
+          
+                <path
+                  d="M190.01 90.3146L190.13 91.1305L190.483 90.3856L228.844 9.58009L215.29 98.085L215.165 98.8985L215.721 98.2917L276.054 32.4494L237.17 113.006L236.813 113.745L237.521 113.33L314.467 68.3019L253.706 133.752L253.15 134.351L253.946 134.165L340.67 113.953L263.429 158.479L262.723 158.886L263.536 158.945L352.331 165.346L265.475 184.99L264.68 185.17L265.439 185.467L348.415 217.914L259.664 210.932L258.85 210.868L259.488 211.377L329.268 266.985L246.51 233.997L245.749 233.693L246.211 234.37L296.596 308.197L227.181 252.135L226.542 251.619L226.785 252.404L253.3 337.89L203.397 263.737L202.937 263.054L202.94 263.878L203.23 353.425L177.27 267.771L177.031 266.982L176.791 267.771L150.831 353.425L151.122 263.878L151.124 263.054L150.664 263.737L100.761 337.89L127.276 252.404L127.519 251.619L126.88 252.135L57.4653 308.197L107.851 234.37L108.312 233.693L107.552 233.997L24.7924 266.985L94.5729 211.377L95.2113 210.868L94.3975 210.932L5.64622 217.914L88.6214 185.467L89.3805 185.17L88.5855 184.99L1.73002 165.346L90.5254 158.945L91.3388 158.886L90.6323 158.479L13.3914 113.953L100.116 134.165L100.912 134.351L100.356 133.752L39.5939 68.3019L116.54 113.33L117.248 113.745L116.891 113.006L78.0072 32.4494L138.34 98.2917L138.896 98.8985L138.771 98.085L125.218 9.58009L163.578 90.3856L163.932 91.1305L164.051 90.3146L177.031 1.72458L190.01 90.3146Z"
+                  stroke="white" stroke-width="0.5" fill='url(#pattern)' opacity='0.9'></path>
+              </svg>
+              <div class="shader__layer specular">
+                <div class="shader__layer mask"></div>
+              </div>
+            </div>
+          </div>
+          <h3 class="stiker-title">-64%</h3>
+        </div>
+      </div>
+   
+  </body>
 </html>
