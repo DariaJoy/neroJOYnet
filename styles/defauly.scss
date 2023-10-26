@@ -34,7 +34,9 @@ body {
     flex-direction             : column;
 }
 
-main {}
+main {
+    z-index: 1;
+}
 
 img,
 svg {

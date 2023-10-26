@@ -43,7 +43,7 @@
 
 .gallery-title {
     display: flex;
-    width  : 45%;
+    width  : 54%;
     z-index: 10;
 }
 
@@ -66,18 +66,16 @@
 }
 
 .gallery-students__item {
-    margin-top           : calc(var(--index)*3);
-    position             : relative;
-    width                : 30%;
-    border               : 1px solid #FBFBFB;
-    border-radius        : calc(var(--index)*1);
-    background           : rgba(217, 217, 217, 0.10);
-    background-blend-mode: overlay;
-    backdrop-filter      : blur(40px);
-    padding              : calc(var(--index)*0.8);
-    display              : flex;
-    flex-direction       : column;
-    gap                  : calc(var(--index)*0.5);
+    margin-top    : calc(var(--index)*3);
+    position      : relative;
+    width         : 30%;
+    border        : 1px solid #FBFBFB;
+    border-radius : calc(var(--index)*1);
+    background    : rgba(217, 217, 217, 0.10);
+    padding       : calc(var(--index)*0.8);
+    display       : flex;
+    flex-direction: column;
+    gap           : calc(var(--index)*0.5);
 }
 
 .gallery-students__item-sergey::before {
@@ -180,7 +178,7 @@
 .gallery-students__item-link {
     position       : relative;
     margin-top     : calc(var(--index)*0.3);
-    border-radius  : calc(var(--index)*1);
+    border-radius  : calc(var(--index)*1.15);
     display        : flex;
     width          : 99%;
     background     : linear-gradient(#fff2, transparent), rgba(54, 54, 54, 0.40);
@@ -195,6 +193,7 @@
     text-decoration: none;
     padding        : calc(var(--index)*0.44);
     align-self     : center;
+    box-shadow     : -2px 4px 4px 0px #000;
 }
 
 .gallery-students__item-link::after {
@@ -246,6 +245,7 @@
 .gallery-bottom-telegram {
     width     : 28%;
     margin-top: 0;
+    box-shadow: none;
 }
 
 .gallery-bottom-vebinar {
