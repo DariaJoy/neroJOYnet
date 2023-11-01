@@ -7,6 +7,7 @@
     <link rel="preload" href="/fonts/europeextendedc_bolditalic.otf" as="font" type="font/otf" crossorigin>
     <link rel="preload" href="/fonts/drukwidecyr-bold.woff2" as="font" type="font/woff2" crossorigin>
     <script type="module" src="/main.js"></script>
+    <script src="/public/js/app.js"></script>
     <title>neuroJOYnet</title>
   </head>
   <body>
@@ -20,8 +21,8 @@
           </div>
           <nav>
             <ul class="header-nav">
-              <li class="header-nav__li1"><a class="header-nav__a" href="">Программа</a></li>
-              <li class="header-nav__li"><a class="header-nav__a" href="">Тарифы</a></li>
+              <li class="header-nav__li1"><a class="header-nav__a"  href="#programm">Программа</a></li>
+              <li class="header-nav__li"><a class="header-nav__a" href="#tariffs">Тарифы</a></li>
               <li class="header-nav__li"><a class="header-nav__a" href="">Галерея</a></li>
               <li class="header-nav__li"><a class="header-nav__a" href="">От&nbsp;автора</a></li>
               <li class="header-nav__li2"><a class="header-nav__a" href="">FAQ</a></li>
@@ -29,9 +30,9 @@
           </nav>
           <div class="socials">
             <ul class="header-socials">
-              <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/VK.png" alt="Vk social"></a>
+              <li class="header-nav__socials"><a href="https://vk.com/online_education_school" target="_blank"><img class="header-nav__img" src="./img/VK.png" alt="Vk social"></a>
               </li>
-              <li class="header-nav__socials"><a href=""><img class="header-nav__img" src="./img/Telegram.png"
+              <li class="header-nav__socials"><a href="https://t.me/kurilov_neiro" target="_blank"><img class="header-nav__img" src="./img/Telegram.png"
                     alt="Telegram social"></a></li>
             </ul>
           </div>
@@ -424,6 +425,7 @@
         </div>
       </section>
       <section class="container program-contaner">
+        <a name="programm"></a>
         <div class="program-contaner__main">
           <div class="program-title">
             <h2 class="title visually-hidden">Программа курса</h2>
@@ -458,6 +460,7 @@
         </div>
       </section>
       <section class="container tariffs-container">
+        <a name="tariffs"></a>
         <div class="tariffs-container__main">
           <div class="tariffs-title">
             <h2 class="title visually-hidden">Тарифы</h2>
@@ -543,7 +546,7 @@
             <div class="gallery-students">
               <div class="gallery-students__item gallery-students__item-sergey">
                 <p class="gallery-students__item-text">
-                  <span>Сергей.</span> &laquo;Работодатель сам нашёл меня в&nbsp;чате курса и&nbsp;предложил монетизировать мои навыки. Сейчас работаю
+                  <span>Сергей</span> &laquo;Работодатель сам нашёл меня в&nbsp;чате курса и&nbsp;предложил монетизировать мои навыки. Сейчас работаю
                   удалённо в&nbsp;одной международной компании, деятельность которой связана с&nbsp;фотобанками на&nbsp;должности
                   менеджера проекта и&nbsp;промпт-инженера. Так&nbsp;же продолжаю сотрудничество с&nbsp;владельцами некоторых Ютуб
                   каналов, снабжаю их&nbsp;контентом.&raquo;
@@ -562,7 +565,7 @@
               </div>
               <div class="gallery-students__item gallery-students__item-elena">
                 <p class="gallery-students__item-text">
-                  <span>Елена.</span> &laquo;Курс Кнопка &bdquo;Шедевр&ldquo; подтолкнул меня на&nbsp;создание генеративного творчества и&nbsp;поиска своего
+                  <span>Елена</span> &laquo;Курс Кнопка &bdquo;Шедевр&ldquo; подтолкнул меня на&nbsp;создание генеративного творчества и&nbsp;поиска своего
                   индивидуального стиля в&nbsp;нейроиллюстрации. Мои творческие изыскания помогли мне найти первых клиентов. Сделанные
                   мной иллюстрации используют в&nbsp;качестве референсов художники и&nbsp;иллюстраторы книг, при этом я&nbsp;работаю
                   в&nbsp;своё удовольствие.&raquo;
@@ -581,21 +584,46 @@
                   <a href="https://t.me/ai_artdeco" target="_blank">Подписаться <img src="/public/img/Telegram.png" alt=""></a>
                 </div>
               </div>
-              <div class="gallery-students__item"></div>
+              <div class="gallery-students__item gallery-students__item-alena">
+                <p class="gallery-students__item-text">
+                  <span>Алёна</span> &laquo;Нейросетями увлеклась случайно, когда на&nbsp;глаза попалась реклама бесплатного семинара от&nbsp;Юрия Курилова.
+                  Сгенерированные с&nbsp;помощью нейросети изображения использую исключительно в&nbsp;личных целях и&nbsp;для
+                  удовольствия. Я&nbsp;веду свой творческий блог и&nbsp;писательскую группу, а&nbsp;нейросети&nbsp;&mdash; прекрасный
+                  инструмент для оформления публикаций и&nbsp;моих произведений.&raquo;
+                </p>
+                <div class="gallery-students__item-control">
+                  <div class="gallery-students__item-left">
+                    <img  src="/public/img/photo_2023-10-30_23-58-24.jpg" alt="">
+                    <img class="img-height" src="/public/img/photo_2023-10-30_23-58-33.jpg" alt="">
+                    <img class="img-height" src="/public/img/photo_2023-10-30_23-58-46.jpg" alt="">
+                    <img class="img-height" src="/public/img/photo_2023-10-30_23-58-38.jpg" alt="">
+                  </div>
+                  <div class="gallery-students__item-right">
+                    <img class="img-height" src="/public/img/photo_2023-10-30_23-59-03.jpg" alt="">
+                    <img src="/public/img/photo_2023-10-30_23-59-11.jpg" alt="">
+                    <img class="img-height" src="/public/img/photo_2023-10-30_23-58-59.jpg" alt="">
+                    <img class="img-height" src="/public/img/photo_2023-10-30_23-59-21.jpg" alt="">
+                  </div>
+                </div>
+                <div class="gallery-students__item-link">
+                  <a href="https://vk.com/naedine_s_muzoj" target="_blank">Подписаться <img src="/public/img/VK.png" alt=""></a>
+                </div>
+              </div>
             </div>
             <div class="gallery-bottom">
               <div class="gallery-bottom-telegram gallery-students__item-link">
                 <a href="https://t.me/+v1xfad8AGQYwM2Vi" target="_blank">Ещё больше работ<img src="/public/img/Telegram.png" alt=""></a>
               </div>
               <div class="gallery-bottom-vebinar hero-vebinar">
-                  <a href="https://neurojoynet.goodly.pro/gw/room/livewebinar90923" target="_blank" class="vebinar-link">!&nbsp;Мастер-класс по&nbsp;созданию фотореалистичных изображений</a>
-                  <a href="https://neurojoynet.goodly.pro/gw/room/livewebinar90923" target="_blank" class="gallery-svg vebinar-svg">
+                  <a href="https://neurojoynet.goodly.pro/gw/room/livewebinar90923"  target="_blank" class="vebinar-link">!&nbsp;Мастер-класс по&nbsp;созданию фотореалистичных изображений</a>
+                  <a href="https://neurojoynet.goodly.pro/gw/room/livewebinar90923" target="_blank" class="gallery-svg vebinar-svg" style="    transition: all 0.5s ease-out;
+    background: rgb(14, 20, 25);
+    box-shadow: -2px -2px 9px 0px rgba(255, 255, 255, 0.3) inset;
+    backdrop-filter: blur(50px);">
                     <svg xmlns="http://www.w3.org/2000/svg" width="98" height="92" viewBox="0 0 98 92" fill="none" >
-                      <g filter="url(#filter0_bi_185_3995)">
-                        <ellipse cx="49" cy="46" rx="48.5" ry="45.5103" fill="#384A6D" fill-opacity="1" />
-                        <path
-                          d="M97 46C97 70.829 75.5401 91.0103 49 91.0103C22.4599 91.0103 1 70.829 1 46C1 21.171 22.4599 0.989746 49 0.989746C75.5401 0.989746 97 21.171 97 46Z"
-                          stroke="url(#paint0_linear_185_3995)" />
+                      <g filter="url(#filter0_bii_168_196)">
+                        <circle cx="48.5" cy="48.5" r="48.5" fill="#384A6D" fill-opacity="0.9" />
+                        <circle cx="48.5" cy="48.5" r="48" stroke="url(#paint0_linear_168_196)" />
                       </g>
                       <g filter="url(#filter1_bd_185_3995)">
                         <path d="M78.1006 46L34.4506 69.6478L34.4506 22.3522L78.1006 46Z" fill="#7D7D7D" fill-opacity="0.4"
@@ -691,11 +719,9 @@
             class="vebinar-link">О&nbsp;том как создавать красивые изображения, не&nbsp;умея рисовать, и&nbsp;зарабатывать хорошие деньги</a>
           <a href="https://neurojoynet.goodly.pro/gw/room/sbneuroyk90923" target="_blank" class="gallery-svg vebinar-svg">
             <svg xmlns="http://www.w3.org/2000/svg" width="98" height="92" viewBox="0 0 98 92" fill="none">
-              <g filter="url(#filter0_bi_185_3995)">
-                <ellipse cx="49" cy="46" rx="48.5" ry="45.5103" fill="#384A6D" fill-opacity="1" />
-                <path
-                  d="M97 46C97 70.829 75.5401 91.0103 49 91.0103C22.4599 91.0103 1 70.829 1 46C1 21.171 22.4599 0.989746 49 0.989746C75.5401 0.989746 97 21.171 97 46Z"
-                  stroke="url(#paint0_linear_185_3995)" />
+              <g filter="url(#filter0_bii_168_196)">
+                <circle cx="48.5" cy="48.5" r="48.5" fill="#384A6D" fill-opacity="0.4" />
+                <circle cx="48.5" cy="48.5" r="48" stroke="url(#paint0_linear_168_196)" />
               </g>
               <g filter="url(#filter1_bd_185_3995)">
                 <path d="M78.1006 46L34.4506 69.6478L34.4506 22.3522L78.1006 46Z" fill="#7D7D7D" fill-opacity="0.4"
@@ -750,9 +776,135 @@
         </div>
         </div>
       </section>
+      <section class="container faq-container">
+        <div class="faq-container__main">
+          <div class="faq-title">
+            <h2 class="title visually-hidden">Для кого будет полезен курс Кнопка "Шедевр"</h2>
+            <img class="faq-title__img" src="/public/img/title-faq-screen.svg"
+              alt="Часто задаваемые вопросы">
+          </div>
+          <div class="faq-control accordion" id="accordion-1">
+            <div id="accordion" class="accordion" style="margin: 1rem auto;">
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Новичкам в&nbsp;IT бедет сложно освоить курс?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    Конечно нет! Для обучения нужны только базовые знания работы с&nbsp;компьютером. На&nbsp;курсе есть специальный чат,
+                    отвечающий за&nbsp;техническую часть процесса.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  В&nbsp;чём отличие Stable Diffusion от&nbsp;Midjourney?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    Это две разные архитектуры искусственного интеллекта для генерации изображений. Stable Defusion и&nbsp;Midjurney
+                    появились приблизительно в&nbsp;одно и&nbsp;тоже время, но&nbsp;решают разные задачи. Главная разница заключается
+                    в&nbsp;стоимости. Stable Defusion нейросеть с&nbsp;открытым кодом и&nbsp;пользоваться ею&nbsp;можно бесплатно.
+                    Midjurney&nbsp;&mdash; корпоративный продукт, следовательно платный (минимум 10$ в&nbsp;месяц). Из&nbsp;РФ&nbsp;подписку
+                    на&nbsp;прямую оформить на&nbsp;данный момент нельзя. Инструментарий, влияющий на&nbsp;генерацию изображений
+                    в&nbsp;Stable Defusion значительно шире, из-за этого на&nbsp;первоначальном этапе пользоваться ею&nbsp;сложнее.
+                    Midjurney рисует детализированные изображения высокого качества, однако повлиять на&nbsp;генерацию, например изменить
+                    позу или перерисовать фигуру с&nbsp;тем&nbsp;же лицом данная нейросеть не&nbsp;позволяет. Многие онлайн сервисы, такие
+                    как PlaygroundAi, Leonardo, Lexica используют архитектуру Stable Defusion. Пользоваться ими так&nbsp;же легко, как
+                    и&nbsp;Midjurney, однако они платные, хоть и&nbsp;дают некоторые бесплатные возможности. Ещё одна отличительная
+                    особенность&nbsp;&mdash; цензура. Midjurney и&nbsp;онлайн сервисы на&nbsp;архитектуре Stable Defusion имеют свой фильтр
+                    контента, поэтому их&nbsp;можно безбоязненно использовать с&nbsp;13&nbsp;лет. В&nbsp;целом они подойдут новичкам
+                    и&nbsp;так или иначе на&nbsp;курсе будет затронута работа с&nbsp;ними. Но&nbsp;начиная с&nbsp;4&nbsp;модуля тарифа PRO
+                    MAX большая часть курса будет посвящена углубленному изучению Stable Defusion, её&nbsp;продвинутому инструментарию для
+                    достижения максимальной реалистичности изображений.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Что такое AUTOMATIC1111?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    Это веб-интерфейс нейросети Stable Defusion. Тот продвинутый инструментарий, который позволяет добиваться максимальной точности результата. Именно по&nbsp;этому Automatic1111 уделена большая часть курса. А&nbsp;ещё она часто обновляется и&nbsp;совершенствуется. Разборы новых функций периодически добавляем в&nbsp;наш 5&nbsp;модуль на&nbsp;тарифе PRO MAX.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Какие системные требования нужны для прохождения курса?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    Студентам курса Кнопка &laquo;Шедевр&raquo; предусмотрен доступ к&nbsp;специальному сервису Google Colab, позволяющему
+                    запускать приложение Аutomatic1111&nbsp;дистанционно. Это значит, что на&nbsp;всех этапах обучения достаточно
+                    компьютера/ноутбука для офиса и&nbsp;дома. Однако работа с&nbsp;продвинутыми нейросетями требует значительных ресурсов
+                    видеокарты (16ГБ) и&nbsp;работы процессора в&nbsp;целом (2.7 мгц и&nbsp;выше), если вы&nbsp;когда-нибудь решите
+                    установить приложение Аutomatic1111 себе на&nbsp;компьютер.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Как оплачивать зарубежные сервисы?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    Об&nbsp;этом расскажем в&nbsp;одном из&nbsp;первых модулей.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Есть&nbsp;ли российские нейросети для создания изображений?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    На&nbsp;сегодняшний день существует несколько отечественных альтернатив. Нейросеть Kandinsky&nbsp;2.2 от&nbsp;Сбера для
+                    генерации изображений на&nbsp;основе текстового запроса или изображения. Работает на&nbsp;сайтах fusionbrain.ai
+                    и&nbsp;rudalle.ru, в&nbsp;telegram-боте Kandinsky&nbsp;2.1 и&nbsp;android-приложении Салют. Запросы можно писать
+                    на&nbsp;русском и&nbsp;еще на&nbsp;100 других языках. Шедевру от&nbsp;Яндекс. В&nbsp;данном случае речь идет
+                    о&nbsp;мобильном приложении. Создает сразу 4&nbsp;картинки на&nbsp;выбор. Оба сервиса бесплатные. По&nbsp;своему
+                    инструментарию схожи с&nbsp;Midjurney.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Можно&nbsp;ли публиковать полученные изображения?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    Каждый сервис по&nbsp;генерации изображений предоставляет разный уровень прав на&nbsp;картинки. Законодательство ещё
+                    не&nbsp;успело сформулировать четкие критерии прав на&nbsp;сгенерированные в&nbsp;нейросетях изображения. Одно можно
+                    сказать точно, изображения, сгенерированные в&nbsp;нейросетях с&nbsp;открытым доступом и&nbsp;использующие в&nbsp;основе
+                    своей генерации ваш собственный уникальный промт, могут использоваться вами в&nbsp;любых целях, в&nbsp;том числе
+                    коммерческих.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Если уже есть опыт работы с&nbsp;нейросетями будет&nbsp;ли полезен курс?
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                    На&nbsp;курсе Кнопка &laquo;Шедевр&raquo; мы&nbsp;рассказываем не&nbsp;только как пользоваться нейросетями,
+                    но&nbsp;и&nbsp;как сделать из&nbsp;этого карьеру и&nbsp;получать заказы. Восполните пробелы в&nbsp;знаниях
+                    и&nbsp;присоединитесь к&nbsp;сообществу единомышленников. Мы&nbsp;тщательно следим за&nbsp;новыми обновлениями
+                    и&nbsp;первыми делимся ими в&nbsp;нашем сообществе.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
       <div class="shapes">
+        <img class="extra-figurs-main" src="/public/img/extra-figurs-main.png" alt="">
+        <img class="extra-figurs-utility" src="/public/img/extra-figurs-utility.png" alt="">
         <img class="fog" src="./img/fog 2.png" alt="">
         <img class="figure" src="./img/фигура.png" alt="">
         <div class="stiker">
@@ -779,7 +931,14 @@
           <h3 class="stiker-title">-64%</h3>
         </div>
         <img class="fog-low" src="/public/img/fog-low.png" alt="">
+        <img class="fog-lower" src="/public/img/fog-low.png" alt="">
+        <img class="fog-lowest" src="/public/img/fog-low.png" alt="">
       </div>
-   
+      <script>
+        new ItcAccordion(document.querySelector('.accordion'), {
+          alwaysOpen: true
+        });
+      </script>
+  
   </body>
 </html>

@@ -106,19 +106,37 @@
     background-image   : url(/public/img/student-avatar-elena.jpg);
 }
 
+.gallery-students__item-alena::before {
+    content            : "";
+    position           : absolute;
+    border             : 1px solid #FBFBFB;
+    border-radius      : 60px;
+    width              : calc(var(--index)*5);
+    height             : calc(var(--index)*5);
+    background-position: center;
+    background-size    : cover;
+    top                : -5%;
+    left               : calc(var(--index)*5.7);
+    background-image   : url(/public/img/student-avatar-alena.jpg);
+}
+
 .gallery-students__item-text {
-    padding              : calc(var(--index)*0.5);
-    text-align           : justify;
-    display              : flex;
-    flex-direction       : column;
-    justify-content      : center;
+    width                : 97%;
+    height               : calc(var(--index)*16.5);
     margin-top           : calc(var(--index)*2.5);
     border               : 0.3px solid #FBFBFB;
     border-radius        : calc(var(--index)*0.5);
     background           : rgba(255, 255, 255, 0.20);
     background-blend-mode: soft-light;
     box-shadow           : 2px -2px 9px 0px rgba(255, 255, 255, 0.70) inset;
-    font-size            : calc(var(--index)*0.7)
+    text-align           : left;
+    display              : flex;
+    align-items          : center;
+    flex-direction       : column;
+    font-size            : calc(var(--index)*0.7);
+    line-height          : 130%;
+    padding              : 2% 6%;
+    gap                  : calc(var(--index)*0.3);
 }
 
 .gallery-students__item-text>span {
@@ -157,6 +175,15 @@
     box-shadow   : -2px 4px 4px 0px #000;
 }
 
+.gallery-students__item-alena .img-height,
+.gallery-students__item-alena .img-height {
+    width        : calc(var(--index)*7.4);
+    height       : calc(var(--index)*9);
+    border       : 0.3px solid #FBFBFB;
+    border-radius: calc(var(--index)*0.5);
+    box-shadow   : -2px 4px 4px 0px #000;
+}
+
 .gallery-students__item-left>img:hover,
 .gallery-students__item-right>img:hover {
     @media (min-width: 1120px) {
@@ -186,9 +213,6 @@
     color          : #FFF;
     font-family    : EuropeExtendedC;
     font-size      : calc(var(--index)*0.7);
-    font-style     : normal;
-    font-weight    : 400;
-    line-height    : normal;
     letter-spacing : 1.2px;
     text-decoration: none;
     padding        : calc(var(--index)*0.44);

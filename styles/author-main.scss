@@ -1,7 +1,7 @@
 .author-container {
     margin               : 0 auto;
     margin-top           : calc(var(--index)*0.5);
-    background-image     : url(/public/img/gallery-screen.png);
+    background-image     : url(/public/img/program-screen.png);
     mix-blend-mode       : lighten;
     background-repeat    : no-repeat;
     background-position-x: center;
@@ -46,10 +46,14 @@
     width  : 27%;
 }
 
+.author-title__img {
+    width: 100%;
+}
+
 .author-control__text {
     text-align    : justify;
     line-height   : 1.8;
-    letter-spacing: 1;
+    letter-spacing: 1.4;
     font-size     : calc(var(--index) * 0.7);
 }
 
@@ -62,7 +66,7 @@
     border       : 1px solid #FBFBFB;
     border-radius: calc(var(--index)*1);
     float        : left;
-    margin       : calc(var(--index) * 1) calc(var(--index) * 1) calc(var(--index) * 1) 0;
+    margin       : calc(var(--index) * 1) calc(var(--index) * 1) 0 0;
 }
 
 .author-control__img-right {
