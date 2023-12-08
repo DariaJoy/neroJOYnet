@@ -102,7 +102,7 @@
     position: absolute;
     width   : 20%;
     top     : calc(var(--index)*10);
-    left    : calc(var(--index)*28);
+    left    : calc(var(--index)*30);
     z-index : -1;
 
     @media(min-width: 580px) {

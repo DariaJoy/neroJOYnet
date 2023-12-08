@@ -16,7 +16,8 @@
     flex-direction : row;
     justify-content: space-between;
     align-items    : center;
-    padding        : calc(var(--index) * 1.5) 20px 0 115px;
+    padding        : calc(var(--index) * 1.5);
+
 
     @media (min-width: 580px) {
         padding: calc(var(--index) * 1) 20px 0 20px;
@@ -33,28 +34,42 @@
     @media (min-width: 1440px) {
         padding: calc(var(--index) * 1.5) 115px 0 115px;
     }
+
+    @media (min-width: 1890px) {
+        padding: calc(var(--index) * 1.5) 115px 0 115px;
+    }
 }
 
-.goodly-logo>a>h2 {
-    text-decoration: none;
-    display        : inline-block;
-    width          : calc(var(--index)*7);
-    color          : (var(--color-text));
-    font-family    : Roboto;
-    font-size      : calc(var(--index)*1.2);
-    font-style     : normal;
-    font-weight    : 800;
-    line-height    : normal;
+.nav {
+    display: none;
+
+    @media (min-width: 580px) {
+        display: block;
+    }
+
+    @media (min-width: 820px) {
+        display: block;
+    }
+
+    @media (min-width: 1120px) {
+        display: block;
+    }
+
+    @media (min-width: 1440px) {
+        display: block;
+    }
+
+    @media (min-width: 1890px) {
+        display: block;
+    }
+
 }
 
-.goodly-logo>a>h2>span {
-    color      : #FEB820;
-    font-family: Roboto;
-    font-size  : calc(var(--index)*1.2);
-    font-style : normal;
-    font-weight: 800;
-    line-height: normal;
+.goodly-logo {
+    width: calc(var(--index)*7);
+
 }
+
 
 .header-nav {
     list-style    : none;
