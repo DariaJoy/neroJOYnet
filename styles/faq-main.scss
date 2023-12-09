@@ -1,14 +1,14 @@
 .faq-container {
-    margin               : 0 auto;
-    margin-top           : calc(var(--index)*0.5);
-    background-image     : url(/public/img/program-screen.png);
-    mix-blend-mode       : lighten;
-    background-repeat    : no-repeat;
-    background-position-x: center;
-    background-position-y: 0;
-    background-size      : 100% 100%;
-    height               : auto;
-    z-index              : -1;
+    margin                  : 0 auto;
+    margin-top              : calc(var(--index)*0.5);
+    // background-image     : url(/public/img/program-screen.png);
+    // mix-blend-mode       : lighten;
+    // background-repeat    : no-repeat;
+    // background-position-x: center;
+    // background-position-y: 0;
+    // background-size      : 100% 100%;
+    height                  : auto;
+    z-index                 : -1;
 }
 
 .faq-container__main {
@@ -42,13 +42,10 @@
 }
 
 .faq-title {
-    display: flex;
-    width  : 14%;
+    display      : flex;
+    margin-bottom: calc(var(--index) * 3);
 }
 
-.faq-title__img {
-    width: 100%;
-}
 
 .accordion {
     width: 100%;

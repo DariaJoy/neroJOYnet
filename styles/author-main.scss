@@ -1,14 +1,14 @@
 .author-container {
-    margin               : 0 auto;
-    margin-top           : calc(var(--index)*0.5);
-    background-image     : url(/public/img/program-screen.png);
-    mix-blend-mode       : lighten;
-    background-repeat    : no-repeat;
-    background-position-x: center;
-    background-position-y: 0;
-    background-size      : 100% 100%;
-    height               : auto;
-    z-index              : -1;
+    margin                  : 0 auto;
+    margin-top              : calc(var(--index)*0.5);
+    // background-image     : url(/public/img/program-screen.png);
+    // mix-blend-mode       : lighten;
+    // background-repeat    : no-repeat;
+    // background-position-x: center;
+    // background-position-y: 0;
+    // background-size      : 100% 100%;
+    height                  : auto;
+    z-index                 : -1;
 }
 
 .author-container__main {
@@ -42,12 +42,8 @@
 }
 
 .author-title {
-    display: flex;
-    width  : 27%;
-}
-
-.author-title__img {
-    width: 100%;
+    display      : flex;
+    margin-bottom: calc(var(--index) * 3);
 }
 
 .author-control__text {
@@ -55,6 +51,7 @@
     line-height   : 1.8;
     letter-spacing: 1.4;
     font-size     : calc(var(--index) * 0.7);
+    background    : radial-gradient(47.5% 44.7% at 50% 50%, rgba(0, 0, 0, 0.90) 0.01%, rgba(0, 0, 0, 0.90) 62.92%, rgba(0, 0, 0, 0.38) 82.71%, rgba(0, 0, 0, 0.00) 100%);
 }
 
 .author-control__text-bold {
@@ -63,7 +60,6 @@
 
 .author-control__img-left {
     width        : calc(var(--index) * 15);
-    border       : 1px solid #FBFBFB;
     border-radius: calc(var(--index)*1);
     float        : left;
     margin       : calc(var(--index) * 1) calc(var(--index) * 1) 0 0;
@@ -71,7 +67,6 @@
 
 .author-control__img-right {
     width        : calc(var(--index) * 15);
-    border       : 1px solid #FBFBFB;
     border-radius: calc(var(--index)*1);
     float        : right;
     margin       : calc(var(--index) * 1) 0 calc(var(--index) * 1) calc(var(--index) * 1);

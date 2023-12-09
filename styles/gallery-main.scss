@@ -1,14 +1,14 @@
 .gallery-container {
-    margin               : 0 auto;
-    margin-top           : calc(var(--index)*0.5);
-    background-image     : url(/public/img/gallery-screen.png);
-    mix-blend-mode       : lighten;
-    background-repeat    : no-repeat;
-    background-position-x: center;
-    background-position-y: 0;
-    background-size      : 100% 100%;
-    height               : auto;
-    z-index              : -1;
+    margin                  : 0 auto;
+    margin-top              : calc(var(--index)*0.5);
+    // background-image     : url(/public/img/gallery-screen.png);
+    // mix-blend-mode       : lighten;
+    // background-repeat    : no-repeat;
+    // background-position-x: center;
+    // background-position-y: 0;
+    // background-size      : 100% 100%;
+    height                  : auto;
+    z-index                 : -1;
 }
 
 .gallery-container__main {
@@ -42,13 +42,9 @@
 }
 
 .gallery-title {
-    display: flex;
-    width  : 54%;
-    z-index: 10;
-}
-
-.gallery-title__img {
-    width: 100%;
+    display      : flex;
+    z-index      : 10;
+    margin-bottom: calc(var(--index) * 3)
 }
 
 .gallery-control {
@@ -66,22 +62,27 @@
 }
 
 .gallery-students__item {
-    margin-top    : calc(var(--index)*3);
-    position      : relative;
-    width         : 30%;
-    border        : 1px solid #FBFBFB;
-    border-radius : calc(var(--index)*1);
-    background    : rgba(217, 217, 217, 0.10);
-    padding       : calc(var(--index)*0.8);
-    display       : flex;
-    flex-direction: column;
-    gap           : calc(var(--index)*0.5);
+    margin-top           : calc(var(--index)*3);
+    position             : relative;
+    width                : 30.5%;
+    background           : rgba(255, 255, 255, 0.30);
+    background-blend-mode: overlay;
+    box-shadow           : 4px 4px 20px 10px rgba(255, 255, 255, 0.1) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(25px);
+    border         : 2px solid rgba(255, 255, 255, 0.30);
+    border-radius  : calc(var(--index)*1);
+    padding        : calc(var(--index)*0.8);
+    display        : flex;
+    flex-direction : column;
+    gap            : calc(var(--index)*0.5);
 }
 
 .gallery-students__item-sergey::before {
     content            : "";
     position           : absolute;
-    border             : 1px solid #FBFBFB;
+    border             : 1px solid #424E58;
+    box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
     width              : calc(var(--index)*5);
     height             : calc(var(--index)*5);
@@ -95,7 +96,8 @@
 .gallery-students__item-elena::before {
     content            : "";
     position           : absolute;
-    border             : 1px solid #FBFBFB;
+    border             : 1px solid #424E58;
+    box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
     width              : calc(var(--index)*5);
     height             : calc(var(--index)*5);
@@ -109,8 +111,9 @@
 .gallery-students__item-alena::before {
     content            : "";
     position           : absolute;
-    border             : 1px solid #FBFBFB;
+    border             : 1px solid #424E58;
     border-radius      : 60px;
+    box-shadow         : 2px 4px 4px 0px #424E58;
     width              : calc(var(--index)*5);
     height             : calc(var(--index)*5);
     background-position: center;
@@ -121,22 +124,17 @@
 }
 
 .gallery-students__item-text {
-    width                : 97%;
-    height               : calc(var(--index)*16.5);
-    margin-top           : calc(var(--index)*2.5);
-    border               : 0.3px solid #FBFBFB;
-    border-radius        : calc(var(--index)*0.5);
-    background           : rgba(255, 255, 255, 0.20);
-    background-blend-mode: soft-light;
-    box-shadow           : 2px -2px 9px 0px rgba(255, 255, 255, 0.70) inset;
-    text-align           : left;
-    display              : flex;
-    align-items          : center;
-    flex-direction       : column;
-    font-size            : calc(var(--index)*0.7);
-    line-height          : 130%;
-    padding              : 2% 6%;
-    gap                  : calc(var(--index)*0.3);
+    width         : 99%;
+    height        : calc(var(--index)*14.5);
+    margin-top    : calc(var(--index)*2.5);
+    text-align    : left;
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+    font-size     : calc(var(--index)*0.7);
+    line-height   : 130%;
+    padding       : 1%;
+    gap           : calc(var(--index)*0.3);
 }
 
 .gallery-students__item-text>span {
@@ -161,27 +159,24 @@
 .gallery-students__item-left>img,
 .gallery-students__item-right>img {
     width        : calc(var(--index)*7.4);
-    border       : 0.3px solid #FBFBFB;
     border-radius: calc(var(--index)*0.5);
-    box-shadow   : -2px 4px 4px 0px #000;
+    box-shadow   : 2px 4px 4px 0px #424E58;
 }
 
 .gallery-students__item-elena .gallery-students__item-left>img,
 .gallery-students__item-elena .gallery-students__item-right>img {
     width        : calc(var(--index)*7.4);
     height       : calc(var(--index)*11.6);
-    border       : 0.3px solid #FBFBFB;
     border-radius: calc(var(--index)*0.5);
-    box-shadow   : -2px 4px 4px 0px #000;
+    box-shadow   : 2px 4px 10px 0px #424E58;
 }
 
 .gallery-students__item-alena .img-height,
 .gallery-students__item-alena .img-height {
     width        : calc(var(--index)*7.4);
     height       : calc(var(--index)*9);
-    border       : 0.3px solid #FBFBFB;
     border-radius: calc(var(--index)*0.5);
-    box-shadow   : -2px 4px 4px 0px #000;
+    box-shadow   : 2px 4px 10px 0px #424E58;
 }
 
 .gallery-students__item-left>img:hover,
@@ -217,7 +212,7 @@
     text-decoration: none;
     padding        : calc(var(--index)*0.44);
     align-self     : center;
-    box-shadow     : -2px 4px 4px 0px #000;
+    box-shadow     : -1px 4px 4px 0px #424E58;
 }
 
 .gallery-students__item-link::after {

@@ -1,13 +1,13 @@
 .tariffs-container {
-    margin               : 0 auto;
-    margin-top           : calc(var(--index)*0.5);
-    background-image     : url(/public/img/tariffs-screen.png);
-    mix-blend-mode       : lighten;
-    background-repeat    : no-repeat;
-    background-position-x: center;
-    background-position-y: 0;
-    background-size      : 100% 100%;
-    height               : auto;
+    margin                  : 0 auto;
+    margin-top              : calc(var(--index)*0.5);
+    // background-image     : url(/public/img/tariffs-screen.png);
+    // mix-blend-mode       : lighten;
+    // background-repeat    : no-repeat;
+    // background-position-x: center;
+    // background-position-y: 0;
+    // background-size      : 100% 100%;
+    height                  : auto;
 }
 
 .tariffs-container__main {
@@ -40,13 +40,10 @@
     }
 }
 
-.tariffs-title {
-    display: flex;
-    width  : 25%;
-}
 
-.tariffs-title__img {
-    width: 100%;
+.tariffs-title {
+    width        : 100%;
+    margin-bottom: calc(var(--index) * 3);
 }
 
 .tariffs-control {
@@ -66,14 +63,14 @@
     background           : linear-gradient(-137deg, #4C2DA6 55%, #EE2F7C, #6AE6B2, 85%, rgba(0, 0, 0, 0.6) 90%);
     width                : 49%;
     height               : auto;
-    border               : 1px solid #FBFBFB;
     border-radius        : calc(var(--index)*1);
     background-size      : cover;
     background-position  : center;
     text-decoration      : none;
     position             : relative;
     background-attachment: fixed;
-    padding              : 2%
+    padding              : calc(var(--index)*1.4);
+
 }
 
 .tariffs-right {
@@ -84,11 +81,14 @@
     width                : 49%;
     height               : auto;
     border-radius        : 20px;
-    border               : 1px solid #FFF;
-    background           : rgba(217, 217, 217, 0.20);
+    border               : 2px solid rgba(255, 255, 255, 0.30);
+    background           : rgba(255, 255, 255, 0.30);
     background-blend-mode: overlay;
-    backdrop-filter      : blur(40px);
-    padding              : 2%
+    box-shadow           : 24px 14px 40px 10px rgba(255, 255, 255, 0.3) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+    padding        : calc(var(--index)*1.4);
+    transition     : all 0.1s;
 }
 
 .tariffs-left>img {
@@ -104,7 +104,7 @@
 }
 
 .tariffs-control__titel {
-    width         : 100%;
+    width         : 102%;
     height        : calc(var(--index)*2);
     font-family   : drukWidecyr-bold;
     font-size     : calc(var(--index)*1);
@@ -137,7 +137,7 @@
 .tariffs-price__container {
     margin-top     : calc(var(--index)*2);
     width          : 100%;
-    height         : calc(var(--index)*7);
+    height         : calc(var(--index)*4);
     display        : flex;
     justify-content: left;
     flex-direction : row;
@@ -182,7 +182,7 @@
 }
 
 .asid {
-    width : calc(var(--index)*14);
+    width : calc(var(--index)*10);
     height: auto;
 
 }
