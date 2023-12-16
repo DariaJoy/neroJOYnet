@@ -109,23 +109,23 @@
 
 .stiker {
     position: absolute;
-    top     : calc(var(--index)*8);
+    top     : calc(var(--index)*5);
     left    : calc(var(--index)*28);
     z-index : -1;
 
     @media(min-width: 580px) {
-        top : calc(var(--index)*7);
-        left: calc(var(--index)*24)
+        top : calc(var(--index)*6.6);
+        left: calc(var(--index)*30)
     }
 
     @media(min-width: 820px) {
-        top : calc(var(--index)*8);
-        left: calc(var(--index)*25)
+        top : calc(var(--index)*6);
+        left: calc(var(--index)*29)
     }
 
     @media(min-width: 1120px) {
-        top : calc(var(--index)*11);
-        left: calc(var(--index)*30)
+        top : calc(var(--index)*7);
+        left: calc(var(--index)*28)
     }
 
 }
@@ -141,17 +141,4 @@
     line-height   : normal;
     letter-spacing: 1.82px;
 
-    @media (min-width: 580px) {
-        left: 17%;
-    }
-
-    @media (min-width: 820px) {
-        top : 47%;
-        left: 24%;
-
-        @media (min-width: 1120px) {
-            top : 55%;
-            left: 20%;
-        }
-    }
 }

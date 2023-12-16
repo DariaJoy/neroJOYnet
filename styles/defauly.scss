@@ -1,7 +1,7 @@
 :root {
-    --index       : calc(1vw + 1vh);
-    --color-header: #F6F6F6;
-    --color-text  : #FBFBFB;
+    --index      : calc(1vw + 1vh);
+    --color-text : #FBFBFB;
+    --color-title: #00F7AD;
 }
 
 html {
@@ -27,15 +27,21 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     font-size                  : 16px;
-    color                      : (var(--color-text));
-    background-color           : #000;
+    color                      : var(--color-text);
+    background-color           : #060214;
     line-height                : 1.2;
     display                    : flex;
     flex-direction             : column;
 }
 
 main {
-    z-index: 1;
+    flex-grow     : 1;
+    padding-bottom: 80px;
+
+    @media(min-width: 580px) {
+        padding-bottom: 100px;
+    }
+
 }
 
 img,
@@ -91,23 +97,7 @@ iframe {
 }
 
 .container {
-    max-width   : 1480px;
-    // padding  : 0 0 0 20px;
-    margin      : 0 auto;
-
-    @media (min-width: 580px) {
-        // padding: 0 0 0 20px;
-    }
-
-    @media (min-width: 820px) {
-        // padding: 0 0 0 43px;
-    }
-
-    @media (min-width: 1120px) {
-        // padding: 0 0 0 92px;
-    }
-
-    @media (min-width: 1440px) {
-        // padding: 0 0 0 115px;
-    }
+    max-width: 1480px;
+    margin   : 0 auto;
+    min-width: 340px;
 }

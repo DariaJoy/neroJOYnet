@@ -1,13 +1,7 @@
 .tariffs-container {
-    margin                  : 0 auto;
-    margin-top              : calc(var(--index)*0.5);
-    // background-image     : url(/public/img/tariffs-screen.png);
-    // mix-blend-mode       : lighten;
-    // background-repeat    : no-repeat;
-    // background-position-x: center;
-    // background-position-y: 0;
-    // background-size      : 100% 100%;
-    height                  : auto;
+    margin    : 0 auto;
+    margin-top: calc(var(--index)*0.5);
+    height    : auto;
 }
 
 .tariffs-container__main {
@@ -54,23 +48,53 @@
 }
 
 .tariffs-left {
-    display              : flex;
-    flex-direction       : column;
-    justify-content      : center;
-    align-items          : center;
-    background-repeat    : no-repeat;
-    mix-blend-mode       : lighten;
-    background           : linear-gradient(-137deg, #4C2DA6 55%, #EE2F7C, #6AE6B2, 85%, rgba(0, 0, 0, 0.6) 90%);
-    width                : 49%;
-    height               : auto;
-    border-radius        : calc(var(--index)*1);
-    background-size      : cover;
-    background-position  : center;
-    text-decoration      : none;
-    position             : relative;
-    background-attachment: fixed;
-    padding              : calc(var(--index)*1.4);
+    background: url(/public/img/itemGrain.svg),
+        conic-gradient(from 18deg at 76% 90.02%, rgba(0, 0, 0, 0.3) 0deg, rgba(255, 255, 255, 0.3) 36.0000005364deg, rgba(0, 0, 0, 0.3) 72.0000010729deg, rgba(255, 255, 255, 0.3) 108.0000042915deg, rgba(0, 0, 0, 0.3) 144.0000021458deg, rgba(255, 255, 255, 0.3) 180deg, rgba(0, 0, 0, 0.3) 216.0000085831deg, rgba(255, 255, 255, 0.3) 251.9999957085deg, rgba(0, 0, 0, 0.3) 288.0000042915deg, rgba(255, 255, 255, 0.3) 323.9999914169deg, rgba(0, 0, 0, 0.3) 360deg),
+        conic-gradient(from -131deg at 76% 90.02%, rgb(9 80 184 / 20%) 0.1deg, rgb(114 212 177 / 90%) 34deg, rgba(43, 154, 141, 0.9) 61.0522806644deg, rgba(158, 214, 214, 0.9) 84.9573504925deg, rgba(29, 161, 145, 0.9) 98.9928245544deg, rgb(64 170 163 / 90%) 114.5964252949deg, rgb(155 215 193 / 90%) 135.119082deg, rgb(116 120 223 / 90%) 171.3632440567deg, rgba(110, 200, 167, 0.9) 196.4689135551deg, rgb(71 41 160 / 90%) 217.5256061554deg, rgba(109, 168, 164, 0.9) 250.3111052513deg, rgba(197, 222, 229, 0.9) 276.7639946938deg, rgb(105 134 147 / 90%) 289.6868133545deg, rgb(180 199 202 / 90%) 311.6096448898deg, rgb(28 34 50) 329deg),
+        #1A1E25;
+    background-blend-mode: soft-light,
+        hue,
+        color-dodge,
+        normal;
+    box-shadow       : 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-size  : cover;
+    background-repeat: no-repeat;
 
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    position       : relative;
+    width          : calc(var(--index) * 27.5);
+    height         : calc(var(--index) * 32);
+    text-decoration: none;
+    position       : relative;
+    z-index        : 11;
+    padding        : calc(var(--index)*1.4);
+    border-radius  : calc(var(--index)*1);
+    transition     : all 0.1s;
+}
+
+
+
+.tariffs-left__img {
+    mix-blend-mode       : color-dodge;
+    background           : linear-gradient(338deg, #ff00c7 40%, #946d06, #00fff0 78%, 85%, rgba(0, 0, 0, 0.6) 89%);
+    box-shadow           : 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-repeat    : no-repeat;
+    background-position  : center;
+    background-size      : cover;
+    border-radius        : calc(var(--index)*1);
+    background-attachment: fixed;
+
+    display   : flex;
+    z-index   : 10;
+    position  : absolute;
+    opacity   : 0.5;
+    color     : transparent;
+    transition: all 0.1s;
+    width     : calc(var(--index) * 27.5);
+    height    : calc(var(--index) * 32);
 }
 
 .tariffs-right {
@@ -80,28 +104,24 @@
     align-items          : center;
     width                : 49%;
     height               : auto;
-    border-radius        : 20px;
-    border               : 2px solid rgba(255, 255, 255, 0.30);
-    background           : rgba(255, 255, 255, 0.30);
+    border-radius        : calc(var(--index)*1);
+    border               : 3px solid rgba(255, 255, 255, 0.15);
+    background           : rgba(255, 255, 255, 0.1);
     background-blend-mode: overlay;
-    box-shadow           : 24px 14px 40px 10px rgba(255, 255, 255, 0.3) inset,
+    box-shadow           : 5px 5px 50px 10px rgba(255, 255, 255, 0.15) inset,
         0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25px);
     padding        : calc(var(--index)*1.4);
     transition     : all 0.1s;
 }
 
-.tariffs-left>img {
-    position             : absolute;
-    opacity              : 0.6;
-    z-index              : -1;
-    background-position  : top center;
-    background-repeat    : no-repeat;
-    width                : 100%;
-    height               : 100%;
-    border-radius        : calc(var(--index)*1);
-    background-blend-mode: color-dodge
-}
+// .tariffs-right:hover {
+//     box-shadow: 4px 4px 20px 1px rgba(255, 255, 255, 0.3) inset,
+//         0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+//     transform: scale(1.01);
+// }
+
+
 
 .tariffs-control__titel {
     width         : 102%;
@@ -109,6 +129,7 @@
     font-family   : drukWidecyr-bold;
     font-size     : calc(var(--index)*1);
     text-transform: uppercase;
+    z-index       : 10;
 }
 
 .tariffs-list {
@@ -117,6 +138,7 @@
     justify-content: center;
     align-items    : center;
     height         : auto;
+    z-index        : 10;
 }
 
 .tariffs-list>li {
@@ -128,10 +150,12 @@
     font-size     : calc(var(--index)*0.7);
     text-transform: uppercase;
     line-height   : 2;
+    z-index       : 10;
 }
 
 .tariffs-list>li>span {
-    color: #FEB820;
+    color  : #FEB820;
+    z-index: 10;
 }
 
 .tariffs-price__container {
@@ -142,6 +166,7 @@
     justify-content: left;
     flex-direction : row;
     position       : relative;
+    z-index        : 10;
 }
 
 .tariff-price__before-container {
@@ -182,8 +207,9 @@
 }
 
 .asid {
-    width : calc(var(--index)*10);
-    height: auto;
+    width  : calc(var(--index)*10);
+    height : auto;
+    z-index: 10;
 
 }
 

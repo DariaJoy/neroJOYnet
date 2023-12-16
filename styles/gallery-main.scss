@@ -65,12 +65,12 @@
     margin-top           : calc(var(--index)*3);
     position             : relative;
     width                : 30.5%;
-    background           : rgba(255, 255, 255, 0.30);
+    border               : 3px solid rgba(255, 255, 255, 0.15);
+    background           : rgba(255, 255, 255, 0.1);
     background-blend-mode: overlay;
-    box-shadow           : 4px 4px 20px 10px rgba(255, 255, 255, 0.1) inset,
-        0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow           : 5px 5px 50px 10px rgba(255, 255, 255, 0.15) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25px);
-    border         : 2px solid rgba(255, 255, 255, 0.30);
     border-radius  : calc(var(--index)*1);
     padding        : calc(var(--index)*0.8);
     display        : flex;
@@ -135,6 +135,7 @@
     line-height   : 130%;
     padding       : 1%;
     gap           : calc(var(--index)*0.3);
+    cursor        : default;
 }
 
 .gallery-students__item-text>span {
@@ -204,7 +205,7 @@
     display        : flex;
     width          : 99%;
     background     : linear-gradient(#fff2, transparent), rgba(54, 54, 54, 0.40);
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(10px);
     color          : #FFF;
     font-family    : EuropeExtendedC;
     font-size      : calc(var(--index)*0.7);
@@ -215,26 +216,26 @@
     box-shadow     : -1px 4px 4px 0px #424E58;
 }
 
-.gallery-students__item-link::after {
-    opacity      : 0.7;
-    content      : "";
-    position     : absolute;
-    top          : 0;
-    left         : 0;
-    right        : 0;
-    bottom       : 0;
-    border       : 0.3px solid transparent;
-    border-radius: calc(var(--index)*1.15);
-    background   : linear-gradient(45deg, #00FFFF, #E9F8DD, #A128FF, #00FFFF,
-            #E9F8DD,
-            #A128FF) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite        : exclude;
-    background-size       : 130%;
-    animation             : animateborder 2s ease infinite paused;
-}
+// .gallery-students__item-link::after {
+//     opacity      : 0.7;
+//     content      : "";
+//     position     : absolute;
+//     top          : 0;
+//     left         : 0;
+//     right        : 0;
+//     bottom       : 0;
+//     border       : 0.3px solid transparent;
+//     border-radius: calc(var(--index)*1.15);
+//     background   : linear-gradient(45deg, #00FFFF, #E9F8DD, #A128FF, #00FFFF,
+//             #E9F8DD,
+//             #A128FF) border-box;
+//     -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+//         linear-gradient(#fff 0 0);
+//     -webkit-mask-composite: destination-out;
+//     mask-composite        : exclude;
+//     background-size       : 130%;
+//     animation             : animateborder 2s ease infinite paused;
+// }
 
 .gallery-students__item-link>a {
     display        : flex;

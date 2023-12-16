@@ -1,20 +1,18 @@
 .abilities-container {
-    margin                     : 0 auto;
-    // margin-top              : calc(var(--index)*0.5);
-    // background-image     : url(/public/img/abilities-screen1.png);
-    // mix-blend-mode       : screen;
-    // background-repeat    : no-repeat;
-    // background-position-x: center;
-    // background-position-y: 0;
-    // background-size      : 100% 100%;
-    height                     : auto;
-    z-index                    : -100;
+    margin : 0 auto;
+    height : auto;
+    z-index: -100;
 
 }
 
+.abilities-container__img {
+    position: absolute;
+    z-index : 1;
+}
 
 
 .abilities-container__main {
+    position       : relative;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
@@ -57,20 +55,22 @@
 }
 
 .abilities-item {
-    border               : 2px solid rgba(255, 255, 255, 0.30);
-    background           : rgba(255, 255, 255, 0.30);
+    border-radius        : calc(var(--index)*1);
+    border               : 3px solid rgba(255, 255, 255, 0.15);
+    background           : rgba(255, 255, 255, 0.1);
     background-blend-mode: overlay;
-    box-shadow           : 4px 4px 20px 10px rgba(255, 255, 255, 0.1) inset,
+    box-shadow           : 5px 5px 50px 10px rgba(255, 255, 255, 0.15) inset,
         0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25px);
     width          : 100%;
     height         : calc(var(--index)*13.5);
-    border-radius  : calc(var(--index)*1);
+    opacity        : 0.9;
     padding        : 2%;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
     gap            : calc(var(--index)*0.6);
+    z-index        : 10;
 
 }
 
@@ -80,6 +80,7 @@
     font-family   : drukWidecyr-bold;
     font-size     : calc(var(--index)*0.7);
     text-transform: uppercase;
+    cursor        : default;
 }
 
 .abilities-control {
@@ -96,7 +97,8 @@
     text-align     : left;
     display        : flex;
     justify-content: center;
-    font-size      : calc(var(--index)*0.7)
+    font-size      : calc(var(--index)*0.7);
+    cursor         : default;
 }
 
 .abilities-control__container {
@@ -117,7 +119,8 @@
 
 .abilities-control__text-bottom,
 .abilities-control__text-bottom span {
-    font-size: calc(var(--index)*0.8)
+    font-size: calc(var(--index)*0.8);
+    cursor   : default;
 }
 
 .abilities-control__container-png {

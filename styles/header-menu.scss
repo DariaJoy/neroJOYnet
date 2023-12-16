@@ -1,15 +1,7 @@
 .hero-container {
-    margin                  : 0 auto;
-    margin-top              : calc(var(--index)*0.1);
-    // background           : url(/public/img/screen.svg);
-    // mix-blend-mode       : screen;
-    // background-repeat    : no-repeat;
-    // background-position-x: center;
-    // background-position-y: 0;
-    // background-size      : 100% 100%;
-    width                   : 100%;
-    height                  : auto;
-    z-index                 : -10;
+    margin: 0 auto;
+    width : 100%;
+    height: auto;
 }
 
 .header-container {
@@ -17,27 +9,22 @@
     flex-direction : row;
     justify-content: space-between;
     align-items    : center;
-    padding        : calc(var(--index) * 1.5);
+    padding        : calc(var(--index) * 1.5) calc(var(--index) * 3) 0 calc(var(--index) * 3);
 
+    @media (min-width: 390px) {
+        padding: calc(var(--index) * 1) calc(var(--index) * 1) 0 calc(var(--index) * 1);
+    }
 
     @media (min-width: 580px) {
-        padding: calc(var(--index) * 1) 20px 0 20px;
+        padding: calc(var(--index) * 1.5) calc(var(--index) * 1.5) 0 calc(var(--index) * 1.5);
     }
 
     @media (min-width: 820px) {
-        padding: calc(var(--index) * 1.3) 43px 0 43px;
+        padding: calc(var(--index) * 1.5) calc(var(--index) * 4) 0 calc(var(--index) * 4);
     }
 
-    @media (min-width: 1120px) {
-        padding: calc(var(--index) * 1.5) 92px 0 92px;
-    }
-
-    @media (min-width: 1440px) {
-        padding: calc(var(--index) * 1.5) 115px 0 115px;
-    }
-
-    @media (min-width: 1890px) {
-        padding: calc(var(--index) * 1.5) 115px 0 115px;
+    @media (min-width: 1200px) {
+        padding: calc(var(--index) * 1.5) calc(var(--index) * 4) 0 calc(var(--index) * 4);
     }
 }
 
@@ -67,10 +54,34 @@
 }
 
 .goodly-logo {
-    width: calc(var(--index)*7);
+    width: calc(var(--index)*6);
+
+    @media (min-width: 290px) {
+        width: calc(var(--index)*20);
+    }
+
+    @media (min-width: 390px) {
+        width: calc(var(--index)*20);
+    }
+
+    @media (min-width: 580px) {
+        width: calc(var(--index)*4);
+    }
+
+    @media (min-width: 820px) {
+        width: calc(var(--index)*5);
+    }
+
+    @media (min-width: 1200px) {
+        width: calc(var(--index)*6);
+    }
 
 }
 
+.goodly-logo>a {
+    width  : 100%;
+    display: block;
+}
 
 .header-nav {
     list-style    : none;
@@ -81,34 +92,33 @@
 
 .header-nav__li {
     width          : min-content;
-    font-size      : calc(var(--index)*0.7);
     height         : 3vh;
     border-left    : 1px solid (var(--color-text));
     align-items    : center;
     display        : flex;
     justify-content: center;
-    padding        : 0 2vw;
+    padding        : 0 1.5vw;
+
 }
 
 .header-nav__li1 {
     width          : min-content;
-    font-size      : calc(var(--index)*0.7);
     height         : 3vh;
     align-items    : center;
     display        : flex;
     justify-content: center;
-    padding        : 0 2vw;
+    padding        : 0 1.5vw;
+
 }
 
 .header-nav__li2 {
     width          : min-content;
-    font-size      : calc(var(--index)*0.7);
     height         : 3vh;
     border-left    : 1px solid (var(--color-text));
     align-items    : center;
     display        : flex;
     justify-content: center;
-    padding        : 0 2vw;
+    padding        : 0 1.5vw;
 }
 
 .header-nav__a {
@@ -123,6 +133,18 @@
     font-weight    : 400;
     line-height    : normal;
     transition     : all 0.1s;
+
+    @media (min-width: 580px) {
+        font-size: 0.8em;
+    }
+
+    @media (min-width: 820px) {
+        font-size: 0.9em;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1.2em;
+    }
 }
 
 .header-nav__a:hover {
@@ -132,6 +154,27 @@
 }
 
 .header-socials {
+    width: calc(var(--index)*4);
+
+    @media (min-width: 290px) {
+        width: calc(var(--index)*12);
+    }
+
+    @media (min-width: 390px) {
+        width: calc(var(--index)*11);
+    }
+
+    @media (min-width: 580px) {
+        width: calc(var(--index)*6);
+    }
+
+    // @media (min-width: 820px) {
+    //     width: calc(var(--index)*7);
+    // }
+
+    // @media (min-width: 1200px) {
+    //     width: calc(var(--index)*6);
+    // }
 
     list-style    : none;
     display       : flex;
@@ -140,5 +183,5 @@
 }
 
 .header-nav__img {
-    width: calc(var(--index)*2.1);
+    width: 100%;
 }

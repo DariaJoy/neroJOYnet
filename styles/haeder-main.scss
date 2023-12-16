@@ -9,23 +9,19 @@
 
     @media (min-width: 580px) {
         gap    : calc(var(--index)*1);
-        padding: calc(var(--index) * 2.5) calc(var(--index) * 0.5) calc(var(--index) * 1.5) 25px;
+        padding: calc(var(--index) * 2.5) calc(var(--index) * 4.5) calc(var(--index) * 1.5) calc(var(--index) * 4.5);
     }
 
     @media (min-width: 820px) {
         gap    : calc(var(--index)*1.2);
-        padding: calc(var(--index) * 3) calc(var(--index) * 0.5) calc(var(--index) * 1.8) 33px;
+        padding: calc(var(--index) * 3) calc(var(--index) * 2.5) calc(var(--index) * 1.8) calc(var(--index) * 2.5);
     }
 
     @media (min-width: 1120px) {
         gap    : calc(var(--index)*1.4);
-        padding: calc(var(--index) * 3.5) calc(var(--index) * 0.5) calc(var(--index) * 2) 95px;
+        padding: calc(var(--index) * 3) calc(var(--index) * 5) calc(var(--index) * 2) calc(var(--index) * 5);
     }
 
-    @media (min-width: 1440px) {
-        gap    : calc(var(--index)*1.8);
-        padding: calc(var(--index) * 2) calc(var(--index) * 7) calc(var(--index) * 2) calc(var(--index) * 7);
-    }
 }
 
 .main-container__left {
@@ -36,6 +32,23 @@
     align-items    : flex-start;
     margin         : 0 auto;
     gap            : calc(var(--index)*1);
+
+}
+
+.title-visually-hidden {
+    position : fixed;
+    transform: scale(0);
+
+    @media(max-width: 580px) {
+        position      : relative;
+        transform     : scale(1);
+        color         : var(--color-title);
+        font-family   : drukWidecyr-bold;
+        font-size     : calc(var(--index)*4);
+        text-transform: uppercase;
+        cursor        : default;
+
+    }
 }
 
 .main-container__action {
@@ -52,6 +65,9 @@
 
 .hero-title__img {
     width: calc(var(--index)*40);
+
+    @media(max-width: 580px) {}
+
 }
 
 .hero-text {
@@ -79,6 +95,7 @@
     justify-content: space-between;
     align-items    : flex-start;
     gap            : calc(var(--index)*6);
+    cursor         : default;
 }
 
 .drop-text {
@@ -92,24 +109,24 @@
     line-height   : normal;
     letter-spacing: 1.2px;
     opacity       : 0.4;
+    cursor        : default;
 
 }
 
 .tariffMax {
-    width                      : calc(var(--index)*19);
-    height                     : calc(var(--index)* 4);
-    border-radius              : calc(var(--index)*1);
-    // background-image        : url('/public/img/proMax.png');
-    background                 : url('/public/img/grainBtn.svg'), conic-gradient(from 90deg at 50% 49.86%, rgba(0, 0, 0, 0.1) 0deg, rgba(255, 255, 255, 0.1) 36deg, rgba(0, 0, 0, 0.1) 285deg, rgba(255, 255, 255, 0.1) 108deg, rgba(0, 0, 0, 0.1) 144deg, rgba(255, 255, 255, 0.1) 180deg, rgba(0, 0, 0, 0.1) 216deg, rgba(255, 255, 255, 0.1) 251deg, rgba(0, 0, 0, 0.1) 288deg, rgba(255, 255, 255, 0.1) 323deg, rgba(0, 0, 0, 0.1) 302deg), conic-gradient(from 259deg at 50% 49.86%, #a9b4d2 1deg, #2B9A8D 10deg, #1DA191 41deg, #B1E1E1 83deg, #4C4FA0 105deg, #6AE6B2 175deg, #4C2DA6 196deg, #6DA8A4 219deg, #ACE2F4 243deg, #485256 279deg, #B6E3D5 317deg, #C0BAC5 359deg), #1A1E25;
-    background-blend-mode      : color-burn, hue, color-dodge, normal;
-    box-shadow                 : 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    position                   : relative;
-    background-position        : top center;
-    background-repeat          : no-repeat;
-    display                    : flex;
-    justify-content            : center;
-    text-align                 : center;
-    z-index                    : 100;
+    width                : calc(var(--index)*19);
+    height               : calc(var(--index)* 4);
+    border-radius        : calc(var(--index)*1);
+    background           : url('/public/img/grainBtn.svg'), conic-gradient(from 90deg at 50% 49.86%, rgba(0, 0, 0, 0.1) 0deg, rgba(255, 255, 255, 0.1) 36deg, rgba(0, 0, 0, 0.1) 285deg, rgba(255, 255, 255, 0.1) 108deg, rgba(0, 0, 0, 0.1) 144deg, rgba(255, 255, 255, 0.1) 180deg, rgba(0, 0, 0, 0.1) 216deg, rgba(255, 255, 255, 0.1) 251deg, rgba(0, 0, 0, 0.1) 288deg, rgba(255, 255, 255, 0.1) 323deg, rgba(0, 0, 0, 0.1) 302deg), conic-gradient(from 259deg at 50% 49.86%, #a9b4d2 1deg, #2B9A8D 10deg, #1DA191 41deg, #B1E1E1 83deg, #4C4FA0 105deg, #6AE6B2 175deg, #4C2DA6 196deg, #6DA8A4 219deg, #ACE2F4 243deg, #485256 279deg, #B6E3D5 317deg, #C0BAC5 359deg), #1A1E25;
+    background-blend-mode: color-burn, hue, color-dodge, normal;
+    box-shadow           : 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-position  : top center;
+    background-repeat    : no-repeat;
+    display              : flex;
+    justify-content      : center;
+    text-align           : center;
+    z-index              : 100;
+    position             : relative;
 }
 
 .tariffMax__link {
@@ -125,9 +142,15 @@
     background-size      : cover;
     background-attachment: fixed;
     border-radius        : calc(var(--index)*1);
-    opacity              : 0.3;
+    opacity              : 0.1;
     color                : transparent;
+    transition           : all 0.1s;
 }
+
+.tariffMax:hover {
+    transform: scale(1.04);
+}
+
 
 .tariffMax__text {
     color         : white;
@@ -149,12 +172,23 @@
     width                : calc(var(--index)*19);
     height               : calc(var(--index)* 4);
     border-radius        : calc(var(--index)*1);
-    border               : 2px solid rgba(255, 255, 255, 0.30);
-    background           : rgba(255, 255, 255, 0.30);
+    border               : 3px solid rgba(255, 255, 255, 0.15);
+    background           : rgba(255, 255, 255, 0.03);
+    background-position  : -7.849px -2.805px;
+    background-size      : 121% 126%;
     background-blend-mode: overlay;
-    box-shadow           : 4px 4px 20px 10px rgba(255, 255, 255, 0.3) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow           : 2px 2px 9px 1px rgba(255, 255, 255, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter      : blur(25px);
     text-decoration      : none;
+    transition           : all 0.1s;
+    opacity              : 0.9;
+}
+
+.tarifStandart:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 20px 1px rgba(255, 255, 255, 0.3) inset,
+        0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    transform: scale(1.04);
 }
 
 .tarifStandart__text {
@@ -166,4 +200,5 @@
     line-height   : normal;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    z-index       : 100;
 }

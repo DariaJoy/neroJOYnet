@@ -1,48 +1,39 @@
 .utility-container {
-    margin                  : 0 auto;
-    margin-top              : calc(var(--index)*0.5);
-    // background-image     : url(/public/img/utility-screen1.png);
-    // mix-blend-mode       : screen;
-    // background-repeat    : no-repeat;
-    // background-position-x: center;
-    // background-position-y: 0;
-    // background-size      : 100% 100%;
-    height                  : auto;
+    margin    : 0 auto;
+    margin-top: calc(var(--index)*0.5);
+    height    : auto;
 
 }
 
 .utility-container__main {
+    margin         : 0 auto;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
     width          : 100%;
     height         : auto;
-    padding        : calc(var(--index) * 2.5) 115px calc(var(--index) * 3) 115px;
+    padding        : calc(var(--index) * 3) calc(var(--index) * 7) calc(var(--index) * 2) calc(var(--index) * 7);
 
     @media (min-width: 580px) {
         gap    : calc(var(--index)*1);
-        padding: calc(var(--index) * 1.5) 25px calc(var(--index) * 1.5) 25px;
+        padding: calc(var(--index) * 2.5) calc(var(--index) * 0.5) calc(var(--index) * 1.5) 25px;
     }
 
     @media (min-width: 820px) {
         gap    : calc(var(--index)*1.2);
-        padding: calc(var(--index) * 1.8) 33px calc(var(--index) * 1.8) 33px;
+        padding: calc(var(--index) * 3) calc(var(--index) * 0.5) calc(var(--index) * 1.8) 33px;
     }
 
     @media (min-width: 1120px) {
         gap    : calc(var(--index)*1.4);
-        padding: calc(var(--index) * 2) 95px calc(var(--index) * 2) 95px;
-    }
-
-    @media (min-width: 1440px) {
-        gap    : calc(var(--index)*1.8);
-        padding: calc(var(--index) * 3) 115px calc(var(--index) * 3) 115px;
+        padding: calc(var(--index) * 3) calc(var(--index) * 5) calc(var(--index) * 2) calc(var(--index) * 5);
     }
 }
 
 .utility-title {
     display      : flex;
     margin-bottom: calc(var(--index) * 3);
+
 }
 
 .utility-title__h2 {
@@ -50,6 +41,8 @@
     font-size     : calc(var(--index)*2);
     text-transform: uppercase;
     width         : 100%;
+    cursor        : default;
+    z-index       : 10;
 }
 
 .utility-list {
@@ -68,12 +61,13 @@
 }
 
 .utility-list__item {
-    background           : rgba(255, 255, 255, 0.30);
+    border-radius        : calc(var(--index)*1);
+    border               : 3px solid rgba(255, 255, 255, 0.15);
+    background           : rgba(255, 255, 255, 0.1);
     background-blend-mode: overlay;
-    box-shadow           : 4px 4px 20px 10px rgba(255, 255, 255, 0.1) inset,
-        0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow           : 10px 10px 50px 10px rgba(255, 255, 255, 0.15) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25px);
-    border         : 2px solid rgba(255, 255, 255, 0.30);
     width          : calc(var(--index)*15);
     height         : calc(var(--index)*13.5);
     border-radius  : calc(var(--index)*1.1);
@@ -93,6 +87,7 @@
     display        : flex;
     justify-content: center;
     align-items    : center;
+    cursor         : default;
 }
 
 .utility-list__item_text {
@@ -103,21 +98,22 @@
     height         : calc(var(--index)*4.5);
     text-align     : center;
     font-size      : calc(var(--index)*0.7);
+    cursor         : default;
 }
 
 .utility-list__bottom {
-    background           : rgba(255, 255, 255, 0.30);
+    border-radius        : calc(var(--index)*1);
+    border               : 3px solid rgba(255, 255, 255, 0.15);
+    background           : rgba(255, 255, 255, 0.1);
     background-blend-mode: overlay;
-    box-shadow           : 4px 4px 20px 10px rgba(255, 255, 255, 0.1) inset,
-        0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow           : 5px 5px 50px 10px rgba(255, 255, 255, 0.15) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(25px);
-    border         : 2px solid rgba(255, 255, 255, 0.30);
     display        : flex;
     justify-content: center;
     align-items    : center;
     width          : 100%;
     height         : calc(var(--index)*9);
-    border-radius  : calc(var(--index)*1);
     padding        : calc(var(--index)*1.7);
     margin-top     : calc(var(--index)*0.4);
 
