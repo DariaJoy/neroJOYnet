@@ -12,21 +12,22 @@
     justify-content: space-between;
     width          : 100%;
     height         : auto;
-    padding        : calc(var(--index) * 3) calc(var(--index) * 7) calc(var(--index) * 2) calc(var(--index) * 7);
+    padding        : 1rem 3.5rem 0 3.5rem;
+
+    @media (min-width: 390px) {
+        padding: 1rem 1.5rem 0 1.5rem;
+    }
 
     @media (min-width: 580px) {
-        gap    : calc(var(--index)*1);
-        padding: calc(var(--index) * 2.5) calc(var(--index) * 0.5) calc(var(--index) * 1.5) 25px;
+        padding: 2rem 1.5rem 0 1.5rem;
     }
 
     @media (min-width: 820px) {
-        gap    : calc(var(--index)*1.2);
-        padding: calc(var(--index) * 3) calc(var(--index) * 0.5) calc(var(--index) * 1.8) 33px;
+        padding: 1rem 2.5rem 0 2.5rem;
     }
 
-    @media (min-width: 1120px) {
-        gap    : calc(var(--index)*1.4);
-        padding: calc(var(--index) * 3) calc(var(--index) * 5) calc(var(--index) * 2) calc(var(--index) * 5);
+    @media (min-width: 1200px) {
+        padding: 1rem 3.5rem 0 3.5rem;
     }
 }
 
