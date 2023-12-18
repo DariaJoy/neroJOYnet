@@ -113,14 +113,24 @@
     left    : calc(var(--index)*28);
     z-index : -1;
 
-    @media(min-width: 580px) {
+    @media(min-width: 320px) {
         top : calc(var(--index)*6.6);
-        left: calc(var(--index)*30)
+        left: calc(var(--index)*20)
+    }
+
+    @media(min-width: 400px) {
+        top : calc(var(--index)*6.6);
+        left: calc(var(--index)*20)
+    }
+
+    @media(min-width: 580px) {
+        top : calc(var(--index) * 6);
+        left: calc(var(--index) * 22);
     }
 
     @media(min-width: 820px) {
-        top : calc(var(--index)*6);
-        left: calc(var(--index)*29)
+        top : calc(var(--index) * 5.5);
+        left: calc(var(--index) * 24);
     }
 
     @media(min-width: 1120px) {

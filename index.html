@@ -84,13 +84,12 @@
     <main>
       <section class="container utility-container">
         <img class="extra-figurs-utility" src="/public/img/extra-figurs-utility.png" alt="">
-        <div class="utility-container__main">
-          <div class="utility-title">
-            <h2 class="utility-title__h2">Для кого будет полезен курс?</h2>
-          </div>
-          <section class="utility-list">
-            <div class="utility-list__top">
-              <ul>
+        <div class="utility-title">
+          <h2 class="utility-title__h2">Для кого будет полезен курс?</h2>
+        </div>
+        <div class="utility-container__main">          
+          <section class="utility-list">      
+              <ul class="utility-list__top">
                 <li class="utility-list__item">
                   <h3 class="utility-list__item_title">Ищите подработку / Новую профессию?</h3>
                   <div class="utility-list__item_svg">
@@ -133,7 +132,6 @@
                   <p class="utility-list__item_text">Снизьте издержки создавая контент самостоятельно</p>
                 </li>
               </ul>
-            </div>
             <div class="utility-list__bottom">
               <h3 class="utility-list__item_title">Ищите новое увлекательное занятие?</h3>
               <div class="utility-list__item_svg">
@@ -149,11 +147,10 @@
         </div>        
       </section>
       <section class="container abilities-container">
+        <div class="abilities-title">
+          <h2 class="utility-title__h2">Возможности нейросетей</h2>
+        </div>
         <div class="abilities-container__main">
-          <img class="abilities-container__img" src="/public/img/extra-figurs-ability.svg" alt="">
-          <div class="abilities-title">
-            <h2 class="utility-title__h2">Возможности нейросетей</h2>
-          </div>
           <section class="abilities-list">
             <div class="abilities-item">
               <h3 class="abilities-item__title">Генерация изображения на основе Текстового запроса</h3>
@@ -167,39 +164,40 @@
                   <img class="abilities-control__container-img" src="/public/img/tiara-with-gem-stones-centered-symmetry.jpg" alt="">
                 </div>
               </div>
-              <p class="abilities-control__text-bottom"><span>&#10033;</span>Добавьте один из&nbsp;множества стилей: Spilberg/Royalistic/Masterpiece/Cinematic/etc</p>
+              <p class="abilities-control__text-bottom"><span>&#10033;</span>Добавьте один из&nbsp;множества стилей: Spilberg/ Royalistic/ Masterpiece/ Cinematic/ etc</p>
             </div>
             <div class="abilities-item">
               <h3 class="abilities-item__title">Смешивание изображения и&nbsp;нейросети</h3>
-              <div class="abilities-control">                
-                  <img class="abilities-control__container-img"
-                    src="/public/img/tiara-with-gem-stones-cinematic-4k-epic.jpg"
-                    alt="">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
-                      <g filter="url(#filter0_i_1_1688)">
-                        <path d="M27.9197 35.6846V25.0849H0.423828V10.5998H27.9197V0L50.448 17.8423L27.9197 35.6846Z" fill="white"
-                          fill-opacity="0.2" style="mix-blend-mode:soft-light" />
-                      </g>
-                      <path
-                        d="M28.0697 10.5998V0.310146L50.2064 17.8423L28.0697 35.3745V25.0849V24.9349H27.9197H0.573828V10.7498H27.9197H28.0697V10.5998Z"
-                        stroke="white" stroke-width="0.3" />
-                      <defs>
-                        <filter id="filter0_i_1_1688" x="0.423828" y="-2" width="52.0241" height="37.6847" filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
-                          <feOffset dx="2" dy="-2" />
-                          <feGaussianBlur stdDeviation="4.5" />
-                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0" />
-                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_1688" />
-                        </filter>
-                      </defs>
+              <div class="abilities-control"> 
+                <div class="abilities-control__hidden">
+                  <img class="abilities-control__container-img" src="/public/img/tiara-with-gem-stones-cinematic-4k-epic.jpg" alt="">
+                  <svg class="abilities-control__container-svg" xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
+                    <g filter="url(#filter0_i_1_1688)">
+                      <path d="M27.9197 35.6846V25.0849H0.423828V10.5998H27.9197V0L50.448 17.8423L27.9197 35.6846Z" fill="white"
+                        fill-opacity="0.2" style="mix-blend-mode:soft-light" />
+                    </g>
+                    <path
+                      d="M28.0697 10.5998V0.310146L50.2064 17.8423L28.0697 35.3745V25.0849V24.9349H27.9197H0.573828V10.7498H27.9197H28.0697V10.5998Z"
+                      stroke="white" stroke-width="0.3" />
+                    <defs>
+                      <filter id="filter0_i_1_1688" x="0.423828" y="-2" width="52.0241" height="37.6847" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="2" dy="-2" />
+                        <feGaussianBlur stdDeviation="4.5" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_1688" />
+                      </filter>
+                    </defs>
                   </svg>
+                </div>               
+                 
                   <img class="abilities-control__container-png" src="/public/img/tiara.png" alt="">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
+                  <svg class="abilities-control__container-svg" xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
                     <g filter="url(#filter0_i_1_1688)">
                       <path d="M27.9197 35.6846V25.0849H0.423828V10.5998H27.9197V0L50.448 17.8423L27.9197 35.6846Z" fill="white"
                         fill-opacity="0.2" style="mix-blend-mode:soft-light" />
@@ -237,7 +235,7 @@
               <div class="abilities-control">
                 
                   <img class="abilities-control__container-portrait" src="/public/img/Maisie Williams.png" alt="">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
+                  <svg  class="abilities-control__container-svg" xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
                     <g filter="url(#filter0_i_1_1688)">
                       <path d="M27.9197 35.6846V25.0849H0.423828V10.5998H27.9197V0L50.448 17.8423L27.9197 35.6846Z" fill="white"
                         fill-opacity="0.2" style="mix-blend-mode:soft-light" />
