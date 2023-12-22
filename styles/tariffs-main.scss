@@ -12,16 +12,9 @@
     flex-direction : column;
     justify-content: space-between;
 
-    padding: 2rem 1.5rem 1rem 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
 
-    // @media (min-width: 390px) {
-    //     padding: 2rem 1.5rem 0 1.5rem;
-    // }
 
-    @media(min-height:380px) {
-        height: 380px;
-        gap   : calc(var(--index)*2);
-    }
 
     @media (min-width: 580px) {
         padding: 2rem 1.5rem 0 1.5rem;
