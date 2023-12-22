@@ -97,12 +97,12 @@ iframe {
 }
 
 .container {
-    max-width: 1480px;
-    margin   : 0 auto;
-    min-width: 340px;
-    width    : 100%;
-    height   : auto;
-    padding  : 2rem 1.5rem 0 1.5rem;
+    max-width   : 1480px;
+    margin      : 0 auto;
+    min-width   : 340px;
+    // width    : 100%;
+    // height   : auto;
+    padding     : 1rem 1.5rem 0 1.5rem;
 
     // @media (min-width: 390px) {
     //     padding: 2rem 1.5rem 0 1.5rem;
@@ -119,4 +119,8 @@ iframe {
     @media (min-width: 1200px) {
         padding: 4rem 3.5rem 0 3.5rem;
     }
+}
+
+.header {
+    position: relative;
 }

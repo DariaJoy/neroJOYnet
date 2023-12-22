@@ -1,21 +1,12 @@
 .faq-container {
-    margin                  : 0 auto;
-    margin-top              : calc(var(--index)*0.5);
-    // background-image     : url(/public/img/program-screen.png);
-    // mix-blend-mode       : lighten;
-    // background-repeat    : no-repeat;
-    // background-position-x: center;
-    // background-position-y: 0;
-    // background-size      : 100% 100%;
-    height                  : auto;
-    z-index                 : -1;
+    margin : 0 auto;
+    height : auto;
+    z-index: -1;
 }
 
 .faq-container__main {
     width          : 100%;
     height         : auto;
-    padding        : calc(var(--index) * 3) 115px calc(var(--index) * 3) 115px;
-    gap            : calc(var(--index)*1.8);
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
@@ -42,8 +33,9 @@
 }
 
 .faq-title {
-    display      : flex;
-    margin-bottom: calc(var(--index) * 3);
+    padding        : 2rem 0;
+    display        : flex;
+    justify-content: center;
 }
 
 
@@ -52,38 +44,73 @@
 }
 
 .accordion__item {
-    margin-bottom: calc(var(--index)*1);
-    border-radius: calc(var(--index)*1);
-    box-shadow   : 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+    margin-bottom: calc(var(--index) * 1);
+    box-shadow   : 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+
+    @media(min-width: 580px) {
+        margin-bottom: calc(var(--index)*1);
+        border-radius: calc(var(--index)*1);
+        box-shadow   : 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+    }
+
 }
 
 .accordion__header {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
-    padding        : calc(var(--index)*1);
+    padding        : 1rem;
     color          : #fff;
-    background     : linear-gradient(#fff2, transparent),
-        rgba(54, 54, 54, 0.40);
+    background     : linear-gradient(rgba(255, 255, 255, 0.1333333333), transparent),
+        rgba(54, 54, 54, 0.4);
     backdrop-filter: blur(40px);
-    border         : 1px solid #FFF;
-    border-radius  : calc(var(--index)*0.7);
+    border-radius  : calc(var(--index) * 1.5);
     cursor         : pointer;
     text-transform : uppercase;
     font-family    : europeextendedc_bold;
-    font-size      : calc(var(--index)*0.9);
+    font-size      : 0.8rem;
+
+    @media(min-width:580px) {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        padding        : calc(var(--index)*1);
+        color          : #fff;
+        background     : linear-gradient(#fff2, transparent),
+            rgba(54, 54, 54, 0.40);
+        backdrop-filter: blur(40px);
+        border         : 1px solid #FFF;
+        border-radius  : calc(var(--index)*0.7);
+        cursor         : pointer;
+        text-transform : uppercase;
+        font-family    : europeextendedc_bold;
+        font-size      : calc(var(--index)*0.9);
+    }
+
 }
 
 .accordion__header::after {
     flex-shrink      : 0;
-    width            : 1.25rem;
-    height           : 1.25rem;
+    width            : 1.2rem;
+    height           : 1.2rem;
     margin-left      : auto;
-    background-image : url("/public/img/cross.svg");
+    background-image : url('/public/img/cross.svg');
     transform        : rotate(45deg);
     background-repeat: no-repeat;
-    background-size  : 1.25rem;
+    background-size  : 1rem;
     content          : "";
+
+    @media(min-width: 580px) {
+        flex-shrink      : 0;
+        width            : 1.25rem;
+        height           : 1.25rem;
+        margin-left      : auto;
+        background-image : url("/public/img/cross.svg");
+        transform        : rotate(45deg);
+        background-repeat: no-repeat;
+        background-size  : 1.25rem;
+        content          : "";
+    }
 }
 
 .accordion__item_show .accordion__header {
@@ -98,23 +125,36 @@
 }
 
 .accordion__item:not(.accordion__item_show) .accordion__header {
-    border-bottom-right-radius: calc(var(--index)*0.7);
-    border-bottom-left-radius : calc(var(--index)*0.7);
+    border-bottom-right-radius: calc(var(--index)*1.5);
+    border-bottom-left-radius : calc(var(--index)*1.5);
 }
 
 .accordion__content {
-    padding                   : calc(var(--index)*1);
-    background                : linear-gradient(0deg, rgba(217, 217, 217, 0.50) 0%, rgba(217, 217, 217, 0.00) 63.56%);
-    border-bottom             : 1px solid #FFF;
-    border-left               : 1px solid #FFF;
-    border-right              : 1px solid #FFF;
+    padding                   : 1rem;
+    background                : linear-gradient(0deg, rgba(217, 217, 217, 0.3) 0%, rgba(217, 217, 217, 0) 63.56%);
     box-shadow                : 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter           : blur(20px);
-    border-bottom-right-radius: calc(var(--index)*0.7);
-    border-bottom-left-radius : calc(var(--index)*0.7);
-    font-size                 : calc(var(--index)*0.8);
-    letter-spacing            : 1.2px;
-    text-align                : justify;
+    border-bottom-right-radius: calc(var(--index) * 1.5);
+    border-bottom-left-radius : calc(var(--index) * 1.5);
+    font-size                 : 0.9rem;
+    letter-spacing            : 0.7px;
+    text-align                : center;
+
+    @media(min-width: 580px) {
+        padding                   : calc(var(--index)*1);
+        background                : linear-gradient(0deg, rgba(217, 217, 217, 0.50) 0%, rgba(217, 217, 217, 0.00) 63.56%);
+        border-bottom             : 1px solid #FFF;
+        border-left               : 1px solid #FFF;
+        border-right              : 1px solid #FFF;
+        box-shadow                : 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter           : blur(20px);
+        border-bottom-right-radius: calc(var(--index)*0.7);
+        border-bottom-left-radius : calc(var(--index)*0.7);
+        font-size                 : calc(var(--index)*0.8);
+        letter-spacing            : 1.2px;
+        text-align                : justify;
+    }
+
 }
 
 .accordion__item:not(.accordion__item_show) .accordion__body {

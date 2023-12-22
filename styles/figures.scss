@@ -99,8 +99,8 @@
 
 .figure {
     position: absolute;
-    left    : -4%;
-    top     : calc(var(--index) * 3.4);
+    left    : 3%;
+    top     : calc(var(--index) * 7.4);
     width   : 100%;
     z-index : -10;
 
@@ -133,8 +133,8 @@
 
 .stiker {
     position: absolute;
-    top     : calc(var(--index) * 16.6);
-    left    : calc(var(--index) * 22);
+    top     : calc(var(--index) * 25.6);
+    left    : calc(var(--index) * 33);
     z-index : 10;
 
 

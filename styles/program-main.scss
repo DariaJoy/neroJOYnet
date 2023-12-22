@@ -9,8 +9,7 @@
     width          : 100%;
     height         : auto;
     position       : relative;
-    padding        : 2rem 1.5rem 0 1.5rem;
-    gap            : calc(var(--index)*1.8);
+    gap            : 1.5rem;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
@@ -51,7 +50,7 @@
 .program-title {
     display        : flex;
     justify-content: center;
-    padding        : 2rem 1.5rem 0 1.5rem;
+    padding        : 2rem 0;
 
     @media (min-width: 580px) {
         padding: 2rem 1.5rem 0 1.5rem;
@@ -69,9 +68,8 @@
 
 .program-control {
     display        : flex;
-    flex-direction : row;
-    flex-wrap      : wrap;
-    gap            : calc(var(--index) * 2);
+    flex-direction : column;
+    gap            : 2rem;
     justify-content: center;
     align-items    : center;
 
@@ -88,12 +86,11 @@
 .program-item {
     display        : flex;
     flex-direction : column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding        : 1rem;
-    width          : calc(var(--index) * 22.5);
-    height         : calc(var(--index) * 17);
-    border-radius  : calc(var(--index) * 1);
-    gap            : calc(var(--index) * 1.8);
+    width          : 100%;
+    height         : calc(var(--index) * 27);
+    border-radius  : calc(var(--index) * 2);
 
     @media(min-width:580px) {
         display        : flex;
@@ -111,9 +108,9 @@
     display       : flex;
     align-items   : center;
     width         : 100%;
-    height        : calc(var(--index)*5);
+    height        : calc(var(--index) * 5);
     font-family   : drukWidecyr-bold;
-    font-size     : calc(var(--index)*1);
+    font-size     : 1.1rem;
     text-transform: uppercase;
     cursor        : default;
 
@@ -133,8 +130,8 @@
     display       : flex;
     align-items   : center;
     width         : 100%;
-    height        : calc(var(--index)*5);
-    font-size     : calc(var(--index)*1);
+    height        : calc(var(--index) * 9.8);
+    font-size     : 0.9rem;
     text-transform: uppercase;
     cursor        : default;
 
