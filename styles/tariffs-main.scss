@@ -18,6 +18,10 @@
     //     padding: 2rem 1.5rem 0 1.5rem;
     // }
 
+    @media(min-height:380px) {
+        height: 380px;
+    }
+
     @media (min-width: 580px) {
         padding: 2rem 1.5rem 0 1.5rem;
     }

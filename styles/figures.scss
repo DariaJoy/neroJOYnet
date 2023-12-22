@@ -29,6 +29,7 @@
     z-index : -1;
 
     @media(min-width:580px) {
+        height  : auto;
         width   : 99%;
         position: absolute;
         top     : -1%;
