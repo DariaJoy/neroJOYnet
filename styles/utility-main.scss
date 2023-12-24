@@ -1,7 +1,6 @@
 .utility-container {
-    margin    : 0 auto;
-    margin-top: calc(var(--index)*0.5);
-    height    : auto;
+    margin: 0 auto;
+    height: auto;
 
 }
 
@@ -173,7 +172,7 @@
 }
 
 .utility-list__item_title {
-    height         : calc(var(--index) * 8.8);
+    height         : calc(var(--index) * 3.8);
     font-family    : drukWidecyr-bold;
     font-size      : 1.1rem;
     text-transform : uppercase;
@@ -240,7 +239,7 @@
 }
 
 .utility-list__bottom {
-    width                : 19rem;
+    // width                : 19rem;
     height               : auto;
     border-radius        : 1rem;
     display              : flex;
@@ -321,7 +320,7 @@
 
 .utility-list__bottom .utility-list__item_title {
     font-size: 1.1rem;
-    height   : calc(var(--index) * 8.8);
+    height   : calc(var(--index) * 3.8);
     width    : 100%;
     cursor   : default;
 

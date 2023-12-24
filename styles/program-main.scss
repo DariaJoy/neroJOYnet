@@ -89,7 +89,7 @@
     justify-content: space-between;
     padding        : 1rem;
     width          : 100%;
-    height         : calc(var(--index) * 27);
+    height         : calc(var(--index) * 22);
     border-radius  : calc(var(--index) * 2);
 
     @media(min-width:580px) {

@@ -8,7 +8,7 @@
 
     width          : 100%;
     height         : auto;
-    gap            : calc(var(--index) * 1.8);
+    gap            : 2rem;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
@@ -53,7 +53,7 @@
     flex-direction : column;
     justify-content: space-between;
     align-items    : center;
-    gap            : 4rem;
+    gap            : 6rem;
 
     @media(min-width: 580px) {
         display        : flex;
@@ -101,12 +101,12 @@
     border             : 1px solid #424E58;
     box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
-    width              : calc(var(--index) * 11);
-    height             : calc(var(--index) * 11);
+    width              : calc(var(--index) * 9);
+    height             : calc(var(--index) * 9);
     background-position: center;
     background-size    : cover;
-    top                : -4%;
-    left               : 8.8rem;
+    top                : -5.6%;
+    left               : 6.7rem;
     background-image   : url(/public/img/student-avatar-sergey.jpg);
 
     @media(min-width: 580px) {
@@ -132,12 +132,12 @@
     border             : 1px solid #424E58;
     box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
-    width              : calc(var(--index) * 11);
-    height             : calc(var(--index) * 11);
+    width              : calc(var(--index) * 9);
+    height             : calc(var(--index) * 9);
     background-position: center;
     background-size    : cover;
-    top                : -4%;
-    left               : 8.8rem;
+    top                : -5.6%;
+    left               : 6.7rem;
     background-image   : url(/public/img/student-avatar-elena.jpg);
 
     @media(min-width: 580px) {
@@ -163,12 +163,12 @@
     border             : 1px solid #424E58;
     box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
-    width              : calc(var(--index) * 11);
-    height             : calc(var(--index) * 11);
+    width              : calc(var(--index) * 9);
+    height             : calc(var(--index) * 9);
     background-position: center;
     background-size    : cover;
-    top                : -4%;
-    left               : 8.8rem;
+    top                : -5.6%;
+    left               : 6.7rem;
     background-image   : url(/public/img/student-avatar-alena.jpg);
 
     @media(min-width: 580px) {
@@ -291,12 +291,10 @@
 }
 
 .gallery-students__item-link {
-    border-radius: calc(var(--index) * 1.5);
-    display      : flex;
-    align-self   : center;
-    width        : 100%;
-    background   : linear-gradient(rgba(255, 255, 255, 0.1333333333), transparent),
-        rgba(54, 54, 54, 0.4);
+    border-radius  : calc(var(--index) * 1);
+    display        : flex;
+    align-self     : center;
+    width          : 100%;
     backdrop-filter: blur(10px);
     color          : #FFF;
     font-family    : EuropeExtendedC;

@@ -115,6 +115,10 @@
     }
 }
 
+.hero-title {
+    display   : flex;
+    align-self: flex-start;
+}
 
 .hero-title__img {
     display: none;
