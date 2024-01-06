@@ -98,15 +98,16 @@
 .gallery-students__item-sergey::before {
     content            : "";
     position           : absolute;
+    display            : flex;
+    align-self         : center;
     border             : 1px solid #424E58;
     box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
-    width              : calc(var(--index) * 9);
-    height             : calc(var(--index) * 9);
+    width              : calc(var(--index) * 10);
+    height             : calc(var(--index) * 10);
     background-position: center;
     background-size    : cover;
-    top                : -5.6%;
-    left               : 6.7rem;
+    top                : -3.6%;
     background-image   : url(/public/img/student-avatar-sergey.jpg);
 
     @media(min-width: 580px) {
@@ -129,15 +130,16 @@
 .gallery-students__item-elena::before {
     content            : "";
     position           : absolute;
+    display            : flex;
+    align-self         : center;
     border             : 1px solid #424E58;
     box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
-    width              : calc(var(--index) * 9);
-    height             : calc(var(--index) * 9);
+    width              : calc(var(--index) * 10);
+    height             : calc(var(--index) * 10);
     background-position: center;
     background-size    : cover;
-    top                : -5.6%;
-    left               : 6.7rem;
+    top                : -3.6%;
     background-image   : url(/public/img/student-avatar-elena.jpg);
 
     @media(min-width: 580px) {
@@ -160,15 +162,16 @@
 .gallery-students__item-alena::before {
     content            : "";
     position           : absolute;
+    display            : flex;
+    align-self         : center;
     border             : 1px solid #424E58;
     box-shadow         : 2px 4px 4px 0px #424E58;
     border-radius      : 60px;
-    width              : calc(var(--index) * 9);
-    height             : calc(var(--index) * 9);
+    width              : calc(var(--index) * 10);
+    height             : calc(var(--index) * 10);
     background-position: center;
     background-size    : cover;
-    top                : -5.6%;
-    left               : 6.7rem;
+    top                : -3.6%;
     background-image   : url(/public/img/student-avatar-alena.jpg);
 
     @media(min-width: 580px) {

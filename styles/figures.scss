@@ -1,7 +1,7 @@
 .extra-figurs-main {
     position         : absolute;
     top              : 0.3%;
-    left             : 2%;
+    left             : 0;
     // width         : 60%;
     height           : auto;
     z-index          : -1;
@@ -42,7 +42,7 @@
     position: absolute;
     top     : 5%;
     z-index : -1;
-    width   : 100%;
+    width   : 80%;
     height  : 40%;
     opacity : 0.5;
 
@@ -60,7 +60,7 @@
     position: absolute;
     top     : 25%;
     z-index : -1;
-    width   : 100%;
+    width   : 80%;
     height  : 49%;
     rotate  : 180deg;
     opacity : 0.7;
@@ -81,7 +81,7 @@
     left    : 6%;
     top     : 52%;
     z-index : -1;
-    width   : 100%;
+    width   : 80%;
     height  : auto;
     rotate  : 10deg;
 }
@@ -99,8 +99,8 @@
 
 .figure {
     position: absolute;
-    left    : -4%;
-    top     : calc(var(--index) * 2.4);
+    left    : -10%;
+    top     : calc(var(--index) * 5.4);
     width   : 100%;
     z-index : -10;
 
@@ -133,8 +133,8 @@
 
 .stiker {
     position: absolute;
-    top     : calc(var(--index) * 16.6);
-    left    : calc(var(--index) * 19);
+    top     : calc(var(--index) * 12.6);
+    left    : calc(var(--index) * 34);
     z-index : 10;
 
 

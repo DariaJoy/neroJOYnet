@@ -47,6 +47,7 @@
 .goodly-logo {
     width: 8rem;
 
+
     // @media (min-width: 290px) {
     //     width: 8rem;
     // }
@@ -70,8 +71,8 @@
 }
 
 .goodly-logo>a {
-    width  : 100%;
-    display: block;
+    max-width: 100%;
+    display  : block;
 }
 
 .header-nav {
