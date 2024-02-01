@@ -15,12 +15,16 @@
 
     @media (min-width: 580px) {
         gap    : calc(var(--index)*1);
-        padding: calc(var(--index) * 1.5) 25px calc(var(--index) * 1.5) 25px;
+        padding: calc(var(--index) * 3.7) calc(var(--index) * 1) 0 calc(var(--index) * 1);
+    }
+
+    @media (min-width: 680px) {
+        padding: calc(var(--index) * 2.7) calc(var(--index) * 1) 0 calc(var(--index) * 1);
     }
 
     @media (min-width: 820px) {
         gap    : calc(var(--index)*1.2);
-        padding: calc(var(--index) * 1.8) 33px calc(var(--index) * 1.8) 33px;
+        padding: 3rem 1rem 0 1rem;
     }
 
     @media (min-width: 1120px) {
@@ -37,7 +41,16 @@
 .gallery-title {
     display: flex;
     z-index: 10;
-    padding: 4rem 0;
+    padding: 5rem 0;
+
+    @media (min-width: 580px) {
+        padding        : calc(var(--index) * 4) calc(var(--index) * 1) 0 calc(var(--index) * 1);
+        justify-content: flex-start;
+    }
+
+    @media (min-width: 820px) {
+        padding: 3rem 1rem 0 1rem;
+    }
 }
 
 .gallery-control {
@@ -55,10 +68,13 @@
     align-items    : center;
     gap            : 6rem;
 
+    @media(min-width: 480px) {
+        margin-top: 4rem;
+    }
+
     @media(min-width: 580px) {
-        display        : flex;
-        flex-direction : row;
-        justify-content: space-between;
+        margin-top: 0;
+        gap       : 2rem;
     }
 }
 
@@ -77,20 +93,11 @@
     gap            : 2rem;
 
     @media(min-width: 580px) {
-        margin-top           : calc(var(--index)*3);
-        position             : relative;
-        width                : 30.5%;
-        border               : 3px solid rgba(255, 255, 255, 0.15);
-        background           : rgba(255, 255, 255, 0.1);
-        background-blend-mode: overlay;
-        box-shadow           : 5px 5px 50px 10px rgba(255, 255, 255, 0.15) inset,
-            0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(25px);
-        border-radius  : calc(var(--index)*1);
-        padding        : calc(var(--index)*0.8);
-        display        : flex;
-        flex-direction : column;
-        gap            : calc(var(--index)*0.5);
+        margin-top   : calc(var(--index)*8);
+        width        : 100%;
+        border-radius: calc(var(--index)*1);
+        padding      : calc(var(--index)*2.8);
+        gap          : calc(var(--index)*4);
     }
 
 }
@@ -110,19 +117,25 @@
     top                : -5%;
     background-image   : url(/public/img/student-avatar-sergey.jpg);
 
+    @media(min-width: 480px) {
+        border-radius: 80px;
+        width        : 22%;
+        height       : 7.5%;
+        top          : -5%;
+    }
+
     @media(min-width: 580px) {
-        content            : "";
-        position           : absolute;
-        border             : 1px solid #424E58;
-        box-shadow         : 2px 4px 4px 0px #424E58;
-        border-radius      : 60px;
-        width              : calc(var(--index)*5);
-        height             : calc(var(--index)*5);
-        background-position: center;
-        background-size    : cover;
-        top                : -5%;
-        left               : calc(var(--index)*5.7);
-        background-image   : url(/public/img/student-avatar-sergey.jpg);
+        border-radius: 60px;
+        width        : 21%;
+        height       : 7.5%;
+        top          : -5%;
+    }
+
+    @media(min-width: 680px) {
+        border-radius: 80px;
+        width        : 19%;
+        height       : 7.5%;
+        top          : -4%;
     }
 
 }
@@ -142,19 +155,25 @@
     top                : -5.6%;
     background-image   : url(/public/img/student-avatar-elena.jpg);
 
+    @media(min-width: 480px) {
+        border-radius: 80px;
+        width        : 22%;
+        height       : 7.5%;
+        top          : -5%;
+    }
+
     @media(min-width: 580px) {
-        content            : "";
-        position           : absolute;
-        border             : 1px solid #424E58;
-        box-shadow         : 2px 4px 4px 0px #424E58;
-        border-radius      : 60px;
-        width              : calc(var(--index)*5);
-        height             : calc(var(--index)*5);
-        background-position: center;
-        background-size    : cover;
-        top                : -5.6%;
-        left               : calc(var(--index)*5.7);
-        background-image   : url(/public/img/student-avatar-elena.jpg);
+        border-radius: 60px;
+        width        : 21%;
+        height       : 8%;
+        top          : -5%;
+    }
+
+    @media(min-width: 680px) {
+        border-radius: 80px;
+        width        : 19%;
+        height       : 7.5%;
+        top          : -4%;
     }
 
 }
@@ -174,19 +193,25 @@
     top                : -5.6%;
     background-image   : url(/public/img/student-avatar-alena.jpg);
 
+    @media(min-width: 480px) {
+        border-radius: 80px;
+        width        : 22%;
+        height       : 7.5%;
+        top          : -5%;
+    }
+
     @media(min-width: 580px) {
-        content            : "";
-        position           : absolute;
-        border             : 1px solid #424E58;
-        box-shadow         : 2px 4px 4px 0px #424E58;
-        border-radius      : 60px;
-        width              : calc(var(--index)*5);
-        height             : calc(var(--index)*5);
-        background-position: center;
-        background-size    : cover;
-        top                : -5%;
-        left               : calc(var(--index)*5.7);
-        background-image   : url(/public/img/student-avatar-alena.jpg);
+        border-radius: 60px;
+        width        : 20%;
+        height       : 8%;
+        top          : -5%;
+    }
+
+    @media(min-width: 680px) {
+        border-radius: 80px;
+        width        : 18%;
+        height       : 7.5%;
+        top          : -4%;
     }
 }
 
@@ -205,15 +230,18 @@
         width         : 99%;
         height        : calc(var(--index)*14.5);
         margin-top    : calc(var(--index)*2.5);
-        text-align    : left;
+        text-align    : center;
         display       : flex;
         align-items   : center;
         flex-direction: column;
-        font-size     : calc(var(--index)*0.7);
+        font-size     : calc(var(--index)*1.37);
         line-height   : 130%;
         padding       : 1%;
         gap           : calc(var(--index)*0.3);
-        cursor        : default;
+    }
+
+    @media(min-width: 680px) {
+        letter-spacing: 0.4px;
     }
 
 }
@@ -228,6 +256,12 @@
     flex-direction : row;
     justify-content: space-between;
     gap            : 1.5rem;
+
+    @media(min-width: 680px) {
+        justify-content: center;
+        gap            : 1.5rem;
+
+    }
 }
 
 .gallery-students__item-left,
@@ -239,11 +273,7 @@
     gap            : 1.5rem;
 
     @media(min-width: 580px) {
-        display        : flex;
-        flex-direction : column;
-        justify-content: space-between;
-        align-items    : center;
-        gap            : calc(var(--index)*0.3);
+        gap: calc(var(--index)*2);
     }
 
 }
@@ -254,9 +284,8 @@
     box-shadow   : 2px 4px 4px 0px #424E58;
 
     @media(min-width:580px) {
-        width        : calc(var(--index)*7.4);
-        border-radius: calc(var(--index)*0.5);
-        box-shadow   : 2px 4px 4px 0px #424E58;
+        width        : calc(var(--index)*24.4);
+        border-radius: calc(var(--index)*1);
     }
 
 }
@@ -265,6 +294,10 @@
 .gallery-students__item-elena .gallery-students__item-right>img {
     border-radius: calc(var(--index)*1.5);
     box-shadow   : 2px 4px 10px 0px #424E58;
+
+    @media(min-width:580px) {
+        border-radius: calc(var(--index)*1);
+    }
 }
 
 // .gallery-students__item-alena .img-height,
@@ -310,43 +343,39 @@
         position     : relative;
         margin-top   : calc(var(--index)*0.3);
         border-radius: calc(var(--index)*1.15);
-        display      : flex;
-        width        : 99%;
+        width        : 47%;
         background   : linear-gradient(#fff2, transparent),
             rgba(54, 54, 54, 0.40);
-        backdrop-filter: blur(10px);
-        color          : #FFF;
-        font-family    : EuropeExtendedC;
-        font-size      : calc(var(--index)*0.7);
-        letter-spacing : 1.2px;
-        text-decoration: none;
-        padding        : calc(var(--index)*0.44);
-        align-self     : center;
-        box-shadow     : -1px 4px 4px 0px #424E58;
+        font-size : calc(var(--index)*1.37);
+        padding   : calc(var(--index)*1);
+        align-self: center;
     }
 
 }
 
-// .gallery-students__item-link::after {
-//     opacity      : 0.7;
-//     content      : "";
-//     position     : absolute;
-//     top          : 0;
-//     left         : 0;
-//     right        : 0;
-//     bottom       : 0;
-//     border       : 0.3px solid transparent;
-//     border-radius: calc(var(--index)*1.15);
-//     background   : linear-gradient(45deg, #00FFFF, #E9F8DD, #A128FF, #00FFFF,
-//             #E9F8DD,
-//             #A128FF) border-box;
-//     -webkit-mask: linear-gradient(#fff 0 0) padding-box,
-//         linear-gradient(#fff 0 0);
-//     -webkit-mask-composite: destination-out;
-//     mask-composite        : exclude;
-//     background-size       : 130%;
-//     animation             : animateborder 2s ease infinite paused;
-// }
+.gallery-students__item-link::after {
+    @media(min-width:580px) {
+        opacity      : 0.7;
+        content      : "";
+        position     : absolute;
+        top          : 0;
+        left         : 0;
+        right        : 0;
+        bottom       : 0;
+        border       : 0.3px solid transparent;
+        border-radius: calc(var(--index)*1.15);
+        background   : linear-gradient(45deg, #00FFFF, #E9F8DD, #A128FF, #00FFFF,
+                #E9F8DD,
+                #A128FF) border-box;
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite        : exclude;
+        background-size       : 130%;
+        animation             : animateborder 2s ease infinite paused;
+    }
+
+}
 
 .gallery-students__item-link>a {
     display        : flex;
@@ -360,16 +389,9 @@
     width          : 100%;
 
     @media(min-width: 580px) {
-        display        : flex;
-        flex-direction : row;
-        justify-content: space-between;
-        align-items    : center;
-        text-transform : uppercase;
-        text-align     : center;
-        font-family    : europeextendedc_bold;
-        font-size      : calc(var(--index)*0.8);
-        z-index        : 10;
-        width          : 100%;
+        font-size: calc(var(--index)*1.37);
+        z-index  : 10;
+        width    : 100%;
     }
 
 }
@@ -378,7 +400,7 @@
     width: 1.8rem;
 
     @media(min-width:580px) {
-        width: calc(var(--index)*1.8);
+        width: calc(var(--index) * 3.8);
     }
 
 }
